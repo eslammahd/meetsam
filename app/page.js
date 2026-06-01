@@ -21,6 +21,8 @@ function Cta({ size = "lg" }) {
   return (
     <a
       href={BOOKING_HREF}
+      target="_blank"
+      rel="noopener noreferrer"
       className={`inline-flex items-center justify-center rounded-full bg-paper font-semibold text-ink transition-transform duration-150 hover:scale-[1.02] active:scale-[0.99] ${pad}`}
     >
       Book a free 30-min call
