@@ -33,7 +33,7 @@
 /* tablet */
 @media (min-width: 768px) {
   :root {
-    --hero-pad: 58px 32px 65px;
+    --hero-pad: 58px 32px 64px;
     --h1-size: 51px;
   }
 }
@@ -41,7 +41,7 @@
 /* desktop */
 @media (min-width: 1024px) {
   :root {
-    --hero-pad: 85px 32px 97px;
+    --hero-pad: 85px 32px 64px;
     --h1-size: 85px;
   }
 }
@@ -96,6 +96,16 @@ h3 {
   font-weight: 500;
   letter-spacing: -0.02em;
   line-height: 1.1;
+}
+
+/* ---------- Centered container ---------- */
+.nav,
+.hero,
+section.section,
+footer {
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ---------- Nav ---------- */
@@ -203,7 +213,7 @@ section.section {
   margin-top: 28px;
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 12px;
 }
 
 .bullets li {
@@ -242,6 +252,7 @@ section.section {
   border: 0.5px solid var(--border);
   border-radius: 10px;
   padding: 28px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .card-label {
@@ -300,12 +311,12 @@ section.section {
 }
 
 .proof li {
-  font-family: "Outfit", system-ui, sans-serif;
-  font-weight: 500;
-  font-size: clamp(20px, 2.4vw, 26px);
-  line-height: 1.28;
-  letter-spacing: -0.02em;
-  max-width: 30ch;
+  font-family: system-ui, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  border-left: 2px solid var(--accent);
+  padding-left: 12px;
 }
 
 /* ---------- How it works ---------- */
