@@ -316,6 +316,11 @@ section.section {
   opacity: 0.88;
 }
 
+/* guarantee at least 32px between content and the bottom-aligned button */
+.card > *:has(+ .card-btn) {
+  margin-bottom: 32px;
+}
+
 .card-label {
   font-size: 12px;
   letter-spacing: 0.17em;
