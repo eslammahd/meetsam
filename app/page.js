@@ -76,7 +76,7 @@ export default function Home() {
 
         {/* Two ways to work together */}
         <section className="section">
-          <p className="eyebrow">Two ways to work together</p>
+          <p className="eyebrow">Ways to work together</p>
           <div className="cards">
             {/* Option 1 */}
             <div className="card">
@@ -112,6 +112,27 @@ export default function Home() {
                   Delivered inside <Orchpad />
                 </li>
               </ul>
+            </div>
+
+            {/* Option 3 */}
+            <div className="card card-accent">
+              <p className="card-label">Option 3</p>
+              <h3 className="card-name">Let&apos;s Just Talk</h3>
+              <p className="card-price">Free</p>
+              <p className="card-sub">
+                Stuck on strategy? Want to scale? Need to mentor your product
+                team? Or looking to add serious AI and tech depth through a
+                network of experts? Book a call and let&apos;s figure out how we
+                can work together.
+              </p>
+              <a
+                href={BOOKING_HREF}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="card-cta"
+              >
+                Book a free call →
+              </a>
             </div>
           </div>
         </section>
