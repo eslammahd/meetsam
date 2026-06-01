@@ -16,7 +16,7 @@
   --btn-text: #ffffff;
   color-scheme: light;
 
-  --hero-pad: 48px 24px 64px;
+  --hero-pad: 32px 24px 64px;
   --h1-size: 38px;
   --pad-x: 24px;
 }
@@ -36,7 +36,7 @@
 /* tablet */
 @media (min-width: 768px) {
   :root {
-    --hero-pad: 58px 24px 64px;
+    --hero-pad: 40px 24px 64px;
     --h1-size: 51px;
   }
 }
@@ -44,7 +44,7 @@
 /* desktop */
 @media (min-width: 1024px) {
   :root {
-    --hero-pad: 85px 64px 64px;
+    --hero-pad: 40px 64px 64px;
     --h1-size: 85px;
     --pad-x: 64px;
   }
