@@ -30,6 +30,23 @@ function Cta({ size = "lg" }) {
   );
 }
 
+function ExternalLink({ href, children, className = "" }) {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`underline decoration-paper/30 underline-offset-4 transition-colors hover:decoration-paper ${className}`}
+    >
+      {children}
+    </a>
+  );
+}
+
+const Orchpad = () => (
+  <ExternalLink href="https://www.orchpad.com">Orchpad</ExternalLink>
+);
+
 export default function Home() {
   return (
     <main>
@@ -93,7 +110,9 @@ export default function Home() {
                 plan
               </li>
               <li>3 live calls + async collaboration</li>
-              <li>Built and delivered inside Orchpad</li>
+              <li>
+                Built and delivered inside <Orchpad />
+              </li>
             </ul>
           </div>
 
@@ -112,7 +131,9 @@ export default function Home() {
               <li>10 hrs/week embedded in your team</li>
               <li>Own a product vertical end-to-end</li>
               <li>Async-first, weekly sync</li>
-              <li>Delivered inside Orchpad</li>
+              <li>
+                Delivered inside <Orchpad />
+              </li>
             </ul>
           </div>
         </div>
@@ -173,8 +194,17 @@ export default function Home() {
       </Section>
 
       <footer className="border-t border-line">
-        <div className="mx-auto flex max-w-3xl items-center justify-between px-6 py-8 text-sm text-muted">
-          <span>Meet Sam</span>
+        <div className="mx-auto flex max-w-3xl flex-col gap-4 px-6 py-8 text-sm text-muted sm:flex-row sm:items-center sm:justify-between">
+          <div className="flex items-center gap-5">
+            <span>Meet Sam</span>
+            <ExternalLink href="https://www.orchpad.com">Orchpad</ExternalLink>
+            <ExternalLink href="https://landing.orchpad.getorvo.co/blog">
+              Blog
+            </ExternalLink>
+            <ExternalLink href="https://www.linkedin.com/in/eslamelmahdy/">
+              LinkedIn
+            </ExternalLink>
+          </div>
           <span>Fractional AI PM &amp; product builder</span>
         </div>
       </footer>
