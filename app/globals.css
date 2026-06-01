@@ -16,6 +16,7 @@
 
   --hero-pad: 48px 24px 64px;
   --h1-size: 38px;
+  --pad-x: 24px;
 }
 
 .dark {
@@ -33,7 +34,7 @@
 /* tablet */
 @media (min-width: 768px) {
   :root {
-    --hero-pad: 58px 32px 64px;
+    --hero-pad: 58px 24px 64px;
     --h1-size: 51px;
   }
 }
@@ -41,8 +42,9 @@
 /* desktop */
 @media (min-width: 1024px) {
   :root {
-    --hero-pad: 85px 32px 64px;
+    --hero-pad: 85px 64px 64px;
     --h1-size: 85px;
+    --pad-x: 64px;
   }
 }
 
@@ -98,23 +100,13 @@ h3 {
   line-height: 1.1;
 }
 
-/* ---------- Centered container ---------- */
-.nav,
-.hero,
-section.section,
-footer {
-  max-width: 860px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 /* ---------- Nav ---------- */
 .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   min-height: 69px;
-  padding: 12px 32px;
+  padding: 12px var(--pad-x);
   border-bottom: 0.5px solid var(--border);
 }
 
@@ -156,7 +148,7 @@ footer {
 }
 
 section.section {
-  padding: 52px 32px;
+  padding: 52px var(--pad-x);
   border-top: 0.5px solid var(--border);
 }
 
@@ -254,6 +246,8 @@ section.section {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
   background: var(--bg-raised);
   border: 0.5px solid var(--border);
   border-radius: 10px;
@@ -265,20 +259,26 @@ section.section {
   border-left: 3px solid var(--accent);
 }
 
-.card-cta {
-  display: inline-flex;
+.card-btn {
+  display: flex;
+  width: 100%;
   align-items: center;
-  margin-top: 22px;
+  justify-content: center;
+  margin-top: auto;
+  padding: 12px 24px;
+  background: var(--btn-bg);
+  color: var(--btn-text);
   font-family: "Outfit", system-ui, sans-serif;
+  font-size: 15px;
   font-weight: 500;
-  font-size: 16px;
-  color: var(--accent);
+  border-radius: 10px;
+  border: none;
   text-decoration: none;
+  cursor: pointer;
 }
 
-.card-cta:hover {
-  text-decoration: underline;
-  text-underline-offset: 3px;
+.card-btn:hover {
+  opacity: 0.88;
 }
 
 .card-label {
@@ -407,7 +407,7 @@ section.section {
 
 /* ---------- Footer ---------- */
 footer {
-  padding: 26px 32px;
+  padding: 26px var(--pad-x);
   border-top: 0.5px solid var(--border);
   display: flex;
   flex-direction: column;

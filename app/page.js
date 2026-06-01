@@ -95,6 +95,14 @@ export default function Home() {
                   Built and delivered inside <Orchpad />
                 </li>
               </ul>
+              <a
+                href={BOOKING_HREF}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="card-btn"
+              >
+                Start a Sprint →
+              </a>
             </div>
 
             {/* Option 2 */}
@@ -112,6 +120,14 @@ export default function Home() {
                   Delivered inside <Orchpad />
                 </li>
               </ul>
+              <a
+                href={BOOKING_HREF}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="card-btn"
+              >
+                Work with me →
+              </a>
             </div>
 
             {/* Option 3 */}
@@ -129,7 +145,7 @@ export default function Home() {
                 href={BOOKING_HREF}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="card-cta"
+                className="card-btn"
               >
                 Book a free call →
               </a>
