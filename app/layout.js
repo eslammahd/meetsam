@@ -16,18 +16,22 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Meet Sam — Fractional AI PM & Product Builder",
-    description:
-      "I turn AI product ideas into shipped software. Fast.",
+    description: "I turn AI product ideas into shipped software. Fast.",
   },
 };
 
 export const viewport = {
-  themeColor: "#0a0a0b",
+  themeColor: "#ffffff",
 };
+
+const themeInit = `(function(){try{if(localStorage.getItem('theme')==='dark'){document.documentElement.classList.add('dark');}}catch(e){}})();`;
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeInit }} />
+      </head>
       <body>{children}</body>
     </html>
   );
