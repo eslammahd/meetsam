@@ -316,9 +316,9 @@ section.section {
   opacity: 0.88;
 }
 
-/* guarantee at least 128px between content and the bottom-aligned button */
+/* guarantee a balanced gap between content and the bottom-aligned button */
 .card > *:has(+ .card-btn) {
-  margin-bottom: 128px;
+  margin-bottom: 32px;
 }
 
 .card-label {
