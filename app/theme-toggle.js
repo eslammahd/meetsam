@@ -7,6 +7,21 @@ export default function ThemeToggle() {
 
   useEffect(() => {
     setDark(document.documentElement.classList.contains("dark"));
+
+    // When no manual choice is saved, follow the OS preference live.
+    const mq = window.matchMedia("(prefers-color-scheme: dark)");
+    const onChange = (e) => {
+      let saved = null;
+      try {
+        saved = localStorage.getItem("theme");
+      } catch {}
+      if (!saved) {
+        document.documentElement.classList.toggle("dark", e.matches);
+        setDark(e.matches);
+      }
+    };
+    mq.addEventListener("change", onChange);
+    return () => mq.removeEventListener("change", onChange);
   }, []);
 
   function toggle() {
