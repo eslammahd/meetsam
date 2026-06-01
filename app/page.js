@@ -31,7 +31,13 @@ export default function Home() {
   return (
     <>
       <nav className="nav">
-        <span className="brand">Meet Sam</span>
+        <a href="/" style={{ textDecoration: "none" }}>
+          <span className="wm">
+            <span className="wm-meet">meet</span>
+            <span className="wm-sam">sam</span>
+            <span className="wm-dot">.</span>
+          </span>
+        </a>
         <ThemeToggle />
       </nav>
 

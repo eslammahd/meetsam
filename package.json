@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fontsource/fraunces": "^5.2.9",
     "@fontsource/outfit": "^5.2.5",
     "@fontsource/tajawal": "^5.2.5",
     "next": "15.5.18",

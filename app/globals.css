@@ -2,6 +2,8 @@
 @import "@fontsource/outfit/500.css";
 @import "@fontsource/tajawal/400.css";
 @import "@fontsource/tajawal/500.css";
+@import "@fontsource/fraunces/400.css";
+@import "@fontsource/fraunces/600.css";
 
 :root {
   --bg: #ffffff;
@@ -110,12 +112,45 @@ h3 {
   border-bottom: 0.5px solid var(--border);
 }
 
-.brand {
-  font-family: "Outfit", system-ui, sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  letter-spacing: -0.01em;
-  color: var(--text);
+.wm {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 22px;
+  letter-spacing: -0.02em;
+  display: inline-flex;
+  align-items: baseline;
+}
+
+.wm-meet {
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.wm-sam {
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.dark .wm-sam {
+  color: #d85a30;
+}
+
+.wm-dot {
+  font-weight: 600;
+  color: #d85a30;
+  opacity: 0;
+  display: inline-block;
+  animation: dotpop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) 0.35s forwards;
+}
+
+@keyframes dotpop {
+  from {
+    opacity: 0;
+    transform: translateX(-5px) scale(0.6);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
 }
 
 .toggle {
