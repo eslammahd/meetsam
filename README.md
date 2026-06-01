@@ -23,3 +23,4 @@ All page copy lives in `app/page.js`. The booking CTA points at the
 `#booking` anchor — swap `BOOKING_HREF` at the top of that file for a real
 scheduling link (e.g. Cal.com / Calendly) when ready.
 
+
