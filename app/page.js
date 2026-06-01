@@ -1,4 +1,4 @@
-const BOOKING_HREF = "#booking";
+const BOOKING_HREF = "https://calendly.com/eslam-orchpad/30min";
 
 function Section({ id, label, children }) {
   return (
