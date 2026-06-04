@@ -156,6 +156,27 @@ export default function Home() {
                 Book a free call →
               </a>
             </div>
+
+            {/* Option 4 */}
+            <div className="card">
+              <p className="card-label">Option 4</p>
+              <h3 className="card-name">Mentorship</h3>
+              <p className="card-price">Free</p>
+              <p className="card-sub">
+                Junior PM trying to break into AI products? Founder figuring out
+                how to build with agents? Just curious about where this is all
+                going?
+              </p>
+              <p className="card-sub">Book a session. No agenda required.</p>
+              <a
+                href={BOOKING_HREF}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="card-btn"
+              >
+                Book a session →
+              </a>
+            </div>
           </div>
         </section>
 
