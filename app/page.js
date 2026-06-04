@@ -137,7 +137,7 @@ export default function Home() {
             </div>
 
             {/* Option 3 */}
-            <div className="card card-accent">
+            <div className="card">
               <p className="card-label">Option 3</p>
               <h3 className="card-name">Let&apos;s Just Talk</h3>
               <p className="card-price">Free</p>
