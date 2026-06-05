@@ -82,13 +82,13 @@ export default function Home() {
 
         {/* Two ways to work together */}
         <section className="section">
-          <p className="eyebrow">Ways to work together</p>
+          <p className="eyebrow">Work with Sam</p>
           <div className="cards">
             {/* Option 1 */}
             <div className="card">
               <p className="card-label">Option 1</p>
               <h3 className="card-name">Product Sprint</h3>
-              <p className="card-price">$1,500</p>
+              <p className="card-price">2-week engagement</p>
               <p className="card-sub">Idea to full spec in 2 weeks</p>
               <ul>
                 <li>Discovery: your users, problem, constraints</li>
@@ -115,10 +115,8 @@ export default function Home() {
             <div className="card">
               <p className="card-label">Option 2</p>
               <h3 className="card-name">Fractional AI PM</h3>
-              <p className="card-price">
-                $1,200<span>/month</span>
-              </p>
-              <ul className="card-spacer">
+              <p className="card-price">Monthly retainer · async-first</p>
+              <ul>
                 <li>10 hrs/week embedded in your team</li>
                 <li>Own a product vertical end-to-end</li>
                 <li>Async-first, weekly sync</li>
@@ -140,7 +138,7 @@ export default function Home() {
             <div className="card">
               <p className="card-label">Option 3</p>
               <h3 className="card-name">Let&apos;s Just Talk</h3>
-              <p className="card-price">Free</p>
+              <p className="card-price">One call · no commitment</p>
               <p className="card-sub">
                 Stuck on strategy? Want to scale? Need to mentor your product
                 team? Or looking to add serious AI and tech depth through a
@@ -161,7 +159,7 @@ export default function Home() {
             <div className="card">
               <p className="card-label">Option 4</p>
               <h3 className="card-name">Mentorship</h3>
-              <p className="card-price">Free</p>
+              <p className="card-price">Ongoing · flexible</p>
               <p className="card-sub">
                 Junior PM trying to break into AI products? Founder figuring out
                 how to build with agents? Just curious about where this is all
