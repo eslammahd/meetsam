@@ -46,21 +46,23 @@ export default function Home() {
         <section className="hero">
           <p className="eyebrow">Meet Sam</p>
           <h1 className="h1">
-            I turn AI product ideas into shipped software. Fast.
+            I find what&apos;s broken in your business and fix it.
           </h1>
           <p className="lead">
-            I&apos;m Sam. Fractional AI PM and product builder. I embed in your
-            team or take your idea end-to-end — from zero to working product, in
-            weeks not months.
+            I&apos;m Sam. I embed in your team as a fractional operator —
+            diagnosing problems, defining strategy, and shipping the fix. I
+            bring product thinking, business instincts, AI, and builder
+            execution together in one person.
           </p>
           <p className="hero-proof">
-            5+ years building AI and marketplace products · Enterprise clients
-            across MENA and KSA · Based in Cairo, open to async worldwide
+            5+ years across marketplaces, SaaS, and AI products · MENA and
+            Europe · Based in Cairo, open to async worldwide
           </p>
           <div>
             <Cta />
             <p className="note">
-              No pitch. No fluff. Just figuring out if I can help.
+              No pitch. No fluff. Just an honest conversation about your
+              business.
             </p>
           </div>
         </section>
@@ -69,18 +71,21 @@ export default function Home() {
         <section className="section">
           <p className="eyebrow">Who I work with</p>
           <ul className="bullets">
-            <li>Founders with an AI idea and no PM to own it</li>
             <li>
-              Startups with a product that needs AI features scoped and shipped
+              Founders who know something isn&apos;t working but can&apos;t
+              pinpoint what
             </li>
             <li>
-              Teams stuck on roadmap, growth, or activation — and need someone
-              to just fix it
+              Scaling teams where growth has stalled and no one agrees why
+            </li>
+            <li>
+              Operators who need someone to own a function end-to-end, not just
+              advise on it
             </li>
           </ul>
         </section>
 
-        {/* Two ways to work together */}
+        {/* Work with Sam */}
         <section className="section">
           <p className="eyebrow">Work with Sam</p>
           <div className="cards">
@@ -89,14 +94,12 @@ export default function Home() {
               <p className="card-label">Option 1</p>
               <h3 className="card-name">Product Sprint</h3>
               <p className="card-price">2-week engagement</p>
-              <p className="card-sub">Idea to full spec in 2 weeks</p>
               <ul>
-                <li>Discovery: your users, problem, constraints</li>
+                <li>Diagnose the real problem — not the surface symptoms</li>
+                <li>Define the strategy and what to build</li>
                 <li>
-                  Delivery: roadmap, MVP spec, AI feature architecture, 90-day
-                  plan
+                  Deliver roadmap, MVP spec, and 90-day execution plan
                 </li>
-                <li>3 live calls + async collaboration</li>
                 <li>
                   Built and delivered inside <Orchpad />
                 </li>
@@ -114,12 +117,12 @@ export default function Home() {
             {/* Option 2 */}
             <div className="card">
               <p className="card-label">Option 2</p>
-              <h3 className="card-name">Fractional AI PM</h3>
+              <h3 className="card-name">Fractional Operator</h3>
               <p className="card-price">Monthly retainer · async-first</p>
               <ul>
-                <li>10 hrs/week embedded in your team</li>
-                <li>Own a product vertical end-to-end</li>
-                <li>Async-first, weekly sync</li>
+                <li>Embedded in your team 10hrs/week</li>
+                <li>Own a product vertical or business function end-to-end</li>
+                <li>Diagnose, prioritize, execute, and close the loop</li>
                 <li>
                   Delivered inside <Orchpad />
                 </li>
@@ -130,7 +133,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="card-btn"
               >
-                Work with me →
+                Embed with me →
               </a>
             </div>
 
@@ -140,10 +143,9 @@ export default function Home() {
               <h3 className="card-name">Let&apos;s Just Talk</h3>
               <p className="card-price">One call · no commitment</p>
               <p className="card-sub">
-                Stuck on strategy? Want to scale? Need to mentor your product
-                team? Or looking to add serious AI and tech depth through a
-                network of experts? Book a call and let&apos;s figure out how we
-                can work together.
+                Stuck on strategy? Growth not moving? Need a second brain on a
+                decision? Book a call and let&apos;s figure out what&apos;s
+                actually going on.
               </p>
               <a
                 href={BOOKING_HREF}
@@ -161,11 +163,10 @@ export default function Home() {
               <h3 className="card-name">Mentorship</h3>
               <p className="card-price">Ongoing · flexible</p>
               <p className="card-sub">
-                Junior PM trying to break into AI products? Founder figuring out
-                how to build with agents? Just curious about where this is all
-                going?
+                Junior PM breaking into AI products? Founder figuring out how to
+                build with agents? Just curious about where this is all going?
+                Book a session. No agenda required.
               </p>
-              <p className="card-sub">Book a session. No agenda required.</p>
               <a
                 href={BOOKING_HREF}
                 target="_blank"
@@ -183,8 +184,9 @@ export default function Home() {
           <p className="eyebrow">Proof</p>
           <ul className="proof">
             <li>
-              Launched an LLM-powered assistant that reduced user friction by
-              15% — shipped to enterprise clients across MENA
+              Diagnosed a broken activation funnel and rebuilt the onboarding
+              system — improving customer activation by 15% at an enterprise
+              SaaS platform serving MENA
             </li>
             <li>
               Built an AI cancellation risk model that cut order cancellations
@@ -225,11 +227,12 @@ export default function Home() {
 
         {/* Final CTA */}
         <section className="section">
-          <h2 className="section-title">Let&apos;s figure out if I can help.</h2>
+          <h2 className="section-title">Let&apos;s figure out what&apos;s broken.</h2>
           <div style={{ marginTop: "24px" }}>
             <Cta />
             <p className="note">
-              No pitch. No fluff. Just figuring out if I can help.
+              No pitch. No fluff. Just an honest conversation about your
+              business.
             </p>
           </div>
         </section>
