@@ -3,11 +3,11 @@ import PostHogProvider from "@/components/PostHogProvider";
 
 export const metadata = {
   metadataBase: new URL("https://meetsam.me"),
-  title: "Meet Sam — Fractional AI PM & Product Builder",
+  title: "Meet Sam — Fractional Operator & Product Builder",
   description:
-    "I turn AI product ideas into shipped software. Fast. Fractional AI PM and product builder — from zero to working product, in weeks not months.",
+    "I find what's broken in your business and fix it. Fractional Operator and product builder — diagnosing problems, defining strategy, and shipping the fix.",
   openGraph: {
-    title: "Meet Sam — Fractional AI PM & Product Builder",
+    title: "Meet Sam — Fractional Operator & Product Builder",
     description:
       "I turn AI product ideas into shipped software. Fast. From zero to working product, in weeks not months.",
     url: "https://meetsam.me",
@@ -16,7 +16,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Meet Sam — Fractional AI PM & Product Builder",
+    title: "Meet Sam — Fractional Operator & Product Builder",
     description: "I turn AI product ideas into shipped software. Fast.",
   },
 };

@@ -249,7 +249,7 @@ export default function Home() {
             LinkedIn
           </ExternalLink>
         </div>
-        <span>Fractional AI PM &amp; product builder</span>
+        <span>Fractional Operator &amp; product builder</span>
       </footer>
     </>
   );
