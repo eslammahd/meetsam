@@ -17,7 +17,7 @@ const Orchpad = () => (
 export const metadata = {
   title: "What Sam does — meetsam.me",
   description:
-    "Three things Sam does better than most — diagnosing what's broken, building the strategy, and shipping the fix fast.",
+    "Most people diagnose. Few can fix. Fewer can build. Sam does all three.",
 };
 
 export default function Services() {
@@ -27,113 +27,72 @@ export default function Services() {
 
       <main>
         {/* Hero */}
-        <section className="hero">
+        <section className="svc-hero">
           <p className="eyebrow">Services</p>
-          <h1 className="h1">Three things I do better than most.</h1>
-          <p className="lead">
-            I don&apos;t offer a menu. I solve specific problems. These are the
-            three where I have the deepest track record and the fastest time to
-            outcome.
+          <h1 className="svc-headline">
+            Most people diagnose. Few can fix. Fewer can build.
+          </h1>
+          <p className="svc-sub">I do all three.</p>
+        </section>
+
+        {/* Service 01 */}
+        <section className="svc-section">
+          <p className="svc-num">01</p>
+          <p className="svc-name">Find what&apos;s broken</p>
+          <p className="svc-sharp">
+            Your metrics aren&apos;t moving. I find out why — when everyone else
+            is still guessing.
+          </p>
+          <p className="svc-body">
+            I go into the data, run the interviews, map the behavior. I
+            don&apos;t stop until the real problem is clear — not the surface
+            symptom everyone&apos;s been debating.
+          </p>
+          <p className="svc-anchor">
+            Behavioral analysis · User interviews · Funnel diagnosis
           </p>
         </section>
 
-        {/* Service cards */}
-        <section className="section">
-          <div className="service-cards">
-            {/* 01 */}
-            <div className="service-card">
-              <p className="service-num">01</p>
-              <h2 className="service-name">Find what&apos;s broken</h2>
-              <p className="service-tagline">Diagnosis before prescription.</p>
-              <p className="service-desc">
-                Most teams treat symptoms. I go deeper — behavioral data, user
-                interviews, funnel analysis — until the real problem is clear.
-                Not a hypothesis. A diagnosis you can act on.
-              </p>
-              <div className="service-deliverables">
-                <p className="service-deliverables-label">What you get</p>
-                <ul>
-                  <li>Root cause report</li>
-                  <li>Prioritized fix list</li>
-                  <li>Clear signal on what NOT to build</li>
-                </ul>
-              </div>
-              <a
-                href={BOOKING_HREF}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="service-cta"
-              >
-                Talk to Sam →
-              </a>
-            </div>
+        {/* Service 02 */}
+        <section className="svc-section">
+          <p className="svc-num">02</p>
+          <p className="svc-name">Build the strategy</p>
+          <p className="svc-sharp">
+            Most roadmaps are wishlists. I build plans that actually get
+            executed.
+          </p>
+          <p className="svc-body">
+            Once the problem is clear, I define what to build, in what order,
+            and why. Sharp enough that your engineers know exactly what to do.
+            Short enough that leadership actually reads it.
+          </p>
+          <p className="svc-anchor">
+            Strategic roadmap · MVP scope · 90-day execution plan
+          </p>
+        </section>
 
-            {/* 02 */}
-            <div className="service-card">
-              <p className="service-num">02</p>
-              <h2 className="service-name">Build the strategy</h2>
-              <p className="service-tagline">Clarity on what to build and why.</p>
-              <p className="service-desc">
-                Once the problem is clear, I turn it into a plan. What to build,
-                in what order, and what success looks like. No 40-page decks. A
-                sharp, executable roadmap your team can actually follow.
-              </p>
-              <div className="service-deliverables">
-                <p className="service-deliverables-label">What you get</p>
-                <ul>
-                  <li>Strategic roadmap</li>
-                  <li>MVP scope and PRD</li>
-                  <li>90-day execution plan</li>
-                </ul>
-              </div>
-              <a
-                href={BOOKING_HREF}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="service-cta"
-              >
-                Talk to Sam →
-              </a>
-            </div>
-
-            {/* 03 */}
-            <div className="service-card">
-              <p className="service-num">03</p>
-              <h2 className="service-name">Ship it fast</h2>
-              <p className="service-tagline">From spec to live product in weeks.</p>
-              <p className="service-desc">
-                I build using AI-accelerated workflows — orchestrating agents to
-                plan, build, test, and deploy. What takes a traditional team 3
-                months takes me 3 weeks. Scoped, built, and shipped.
-              </p>
-              <div className="service-deliverables">
-                <p className="service-deliverables-label">What you get</p>
-                <ul>
-                  <li>Live MVP or shipped feature</li>
-                  <li>Clean handoff documentation</li>
-                  <li>
-                    Built and delivered inside <Orchpad />
-                  </li>
-                </ul>
-              </div>
-              <a
-                href={BOOKING_HREF}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="service-cta"
-              >
-                Talk to Sam →
-              </a>
-            </div>
-          </div>
+        {/* Service 03 */}
+        <section className="svc-section">
+          <p className="svc-num">03</p>
+          <p className="svc-name">Ship it fast</p>
+          <p className="svc-sharp">
+            What takes a traditional team 3 months takes me 3 weeks.
+          </p>
+          <p className="svc-body">
+            I use AI-accelerated workflows to plan, build, test, and deploy. Not
+            vibe-coding. Structured agent orchestration with real output —
+            scoped, built, and shipped inside <Orchpad />.
+          </p>
+          <p className="svc-anchor">
+            AI-accelerated build · Live MVP · Delivered inside Orchpad
+          </p>
         </section>
 
         {/* Bottom CTA */}
         <section className="section">
           <h2 className="section-title">Not sure which one you need?</h2>
           <p className="lead" style={{ marginTop: "16px" }}>
-            Most engagements start with a diagnosis. Book a free 30-min call and
-            we&apos;ll figure it out together.
+            Most engagements start with a diagnosis. Book a free 30-min call.
           </p>
           <div style={{ marginTop: "28px" }}>
             <a
