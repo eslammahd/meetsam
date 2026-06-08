@@ -1,4 +1,4 @@
-import ThemeToggle from "./theme-toggle";
+import Nav from "./nav";
 
 const BOOKING_HREF = "https://calendly.com/eslam-orchpad/30min";
 
@@ -30,16 +30,7 @@ function Cta() {
 export default function Home() {
   return (
     <>
-      <nav className="nav">
-        <a href="/" style={{ textDecoration: "none" }}>
-          <span className="wm">
-            <span className="wm-meet">meet</span>
-            <span className="wm-sam">sam</span>
-            <span className="wm-dot">.</span>
-          </span>
-        </a>
-        <ThemeToggle />
-      </nav>
+      <Nav />
 
       <main>
         {/* Hero */}
