@@ -186,6 +186,66 @@ h3 {
   padding: var(--hero-pad);
 }
 
+/* Two-column hero layout */
+.hero-2col {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+}
+
+@media (min-width: 900px) {
+  .hero-2col {
+    grid-template-columns: 3fr 2fr;
+    gap: 64px;
+    align-items: center;
+  }
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-right {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.hero-stat-card {
+  background: #F7F7F7;
+  border-radius: 10px;
+  padding: 20px 24px;
+  border-left: 3px solid #1A1A1A;
+}
+
+.hero-stat-num {
+  font-family: "Outfit", system-ui, sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  color: #1A1A1A;
+  margin: 0 0 4px;
+  line-height: 1;
+}
+
+.hero-stat-label {
+  font-size: 14px;
+  color: var(--text);
+  margin: 0 0 3px;
+  font-weight: 500;
+}
+
+.hero-stat-sub {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.hero-stat-footer {
+  text-align: right;
+  margin-top: 4px;
+}
+
 section.section {
   padding: 52px var(--pad-x);
   border-top: 0.5px solid var(--border);

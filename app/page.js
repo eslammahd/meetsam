@@ -43,52 +43,52 @@ export default function Home() {
       <Nav />
 
       <main>
-        {/* 1 — Hero */}
-        <section className="hero">
-          <p className="eyebrow">MEET SAM</p>
-          <h1 className="h1">
-            I find what&apos;s broken. Then I fix it.
-          </h1>
-          <p className="lead">
-            I&apos;m Sam. I embed in your team, diagnose the real problem —
-            not the obvious one — and build the fix. 6 years across B2B SaaS
-            and marketplaces in MENA.
-          </p>
-          <p className="hero-proof">
-            Currently available for new engagements · Cairo-based · async
-            worldwide
-          </p>
-          <Tags tags={["Marketplaces", "B2B SaaS", "Fintech & BNPL", "AI products", "MENA & KSA", "Growth & retention"]} />
-          <div>
-            <Cta />
-            <p className="note">
-              No pitch. If I can&apos;t help, I&apos;ll tell you.
+        {/* 1 — Hero (two-column) */}
+        <section className="hero hero-2col">
+          {/* Left column */}
+          <div className="hero-left">
+            <p className="eyebrow">MEET SAM</p>
+            <h1 className="h1">
+              I find what&apos;s broken. Then I fix it.
+            </h1>
+            <p className="lead">
+              I&apos;m Sam. I embed in your team, diagnose the real problem —
+              not the obvious one — and build the fix. 6 years across B2B SaaS
+              and marketplaces in MENA.
             </p>
+            <p className="hero-proof">
+              Currently available for new engagements · Cairo-based · async
+              worldwide
+            </p>
+            <Tags tags={["Marketplaces", "B2B SaaS", "Fintech & BNPL", "AI products", "MENA & KSA", "Growth & retention"]} />
+            <div>
+              <Cta />
+              <p className="note">
+                No pitch. If I can&apos;t help, I&apos;ll tell you.
+              </p>
+            </div>
           </div>
-        </section>
 
-        {/* 2 — Quick Proof */}
-        <section className="section hp-stat-section">
-          <p className="eyebrow" style={{ marginBottom: "20px" }}>Proof of Work</p>
-          <div className="hp-stat-grid">
-            <div className="hp-stat-card">
-              <p className="hp-stat-num">25%</p>
-              <p className="hp-stat-label">fewer cancellations</p>
-              <p className="hp-stat-sub">AI risk model · KSA marketplace</p>
+          {/* Right column — proof stats */}
+          <div className="hero-right">
+            <div className="hero-stat-card">
+              <p className="hero-stat-num">25%</p>
+              <p className="hero-stat-label">fewer cancellations</p>
+              <p className="hero-stat-sub">AI risk model · KSA marketplace</p>
             </div>
-            <div className="hp-stat-card">
-              <p className="hp-stat-num">40%</p>
-              <p className="hp-stat-label">BNPL activation increase</p>
-              <p className="hp-stat-sub">Credit scorecards · B2B Egypt</p>
+            <div className="hero-stat-card">
+              <p className="hero-stat-num">40%</p>
+              <p className="hero-stat-label">BNPL activation increase</p>
+              <p className="hero-stat-sub">Credit scorecards · B2B Egypt</p>
             </div>
-            <div className="hp-stat-card">
-              <p className="hp-stat-num">4 weeks</p>
-              <p className="hp-stat-label">zero to live product</p>
-              <p className="hp-stat-sub">Orchpad · AI agent workflows</p>
+            <div className="hero-stat-card">
+              <p className="hero-stat-num">4 weeks</p>
+              <p className="hero-stat-label">zero to live product</p>
+              <p className="hero-stat-sub">Orchpad · AI agent workflows</p>
             </div>
-          </div>
-          <div className="hp-stat-footer">
-            <a href="/work" className="hp-stat-more">See all case studies →</a>
+            <div className="hero-stat-footer">
+              <a href="/work" className="hp-stat-more">See all case studies →</a>
+            </div>
           </div>
         </section>
 
