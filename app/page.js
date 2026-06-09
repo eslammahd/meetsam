@@ -1,4 +1,5 @@
 import Nav from "./nav";
+import CaseStudies from "./case-studies";
 
 const BOOKING_HREF = "https://calendly.com/eslam-orchpad/30min";
 
@@ -86,12 +87,12 @@ export default function Home() {
               <p className="hero-stat-sub">Orchpad · AI agent workflows</p>
             </div>
             <div className="hero-stat-footer">
-              <a href="/work" className="hp-stat-more">See all case studies →</a>
+              <a href="#case-studies" className="hp-stat-more">See case studies ↓</a>
             </div>
           </div>
         </section>
 
-        {/* 3 — Who I work with */}
+        {/* 2 — Who I work with */}
         <section className="section">
           <p className="eyebrow">Who I work with</p>
           <div className="hp-who-grid">
@@ -116,64 +117,95 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 4 — Built & Shipped mini */}
+        {/* 3 — Case Studies */}
+        <section className="section" id="case-studies">
+          <p className="eyebrow">Case Studies</p>
+          <CaseStudies />
+        </section>
+
+        {/* 4 — My Playground */}
         <section className="section">
-          <p className="eyebrow">Built &amp; Shipped</p>
+          <p className="eyebrow">My Playground</p>
           <p className="hp-shipped-sub">
-            Live products built under Orvo AI.
+            Three products I built from scratch, alone, in my free time. No team. No budget. Just curiosity and too many late nights.
           </p>
-          <div className="hp-shipped-grid">
-            {/* Orchpad — dark */}
+          <div className="shipped-grid">
+            {/* Orchpad */}
             <a
               href="https://orchpad.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="hp-mini-card hp-mini-card--dark"
+              className="shipped-card"
             >
-              <div className="hp-mini-top">
-                <span className="hp-mini-pulse" style={{ background: "#6366f1" }} />
-                <span className="hp-mini-label" style={{ color: "#a5b4fc" }}>Build</span>
+              <div className="shipped-top">
+                <div>
+                  <p className="shipped-label" style={{ color: "#6366f1", background: "rgba(99,102,241,0.125)" }}>
+                    Build
+                  </p>
+                  <p className="shipped-name">Orchpad</p>
+                </div>
+                <span className="shipped-status" style={{ background: "#F3F0FF", color: "#5B3DC7", border: "0.5px solid #5B3DC7" }}>Invite only</span>
               </div>
-              <p className="hp-mini-name" style={{ color: "#f1f5f9" }}>Orchpad</p>
-              <p className="hp-mini-tagline" style={{ color: "#94a3b8" }}>AI-native product workspace</p>
-              <p className="hp-mini-live" style={{ color: "#64748b" }}>Live · invite only</p>
+              <div className="shipped-bottom">
+                <div className="shipped-dots-row">
+                  <span className="shipped-dot" style={{ background: "#6366f1" }} />
+                  <span className="shipped-dot" style={{ background: "#818cf8" }} />
+                  <span className="shipped-dot" style={{ background: "#4f46e5" }} />
+                  <span className="shipped-dots-label">Build · Studio · Signal</span>
+                </div>
+                <p className="shipped-desc">
+                  An AI-native workspace where founders turn ideas into shipped products using agent workflows.
+                </p>
+                <p className="shipped-url">orchpad.com</p>
+              </div>
             </a>
 
-            {/* skim. — cream */}
+            {/* skim. */}
             <a
               href="https://skim.getorvo.co"
               target="_blank"
               rel="noopener noreferrer"
-              className="hp-mini-card hp-mini-card--cream"
+              className="shipped-card"
             >
-              <div className="hp-mini-top">
-                <span className="hp-mini-pulse" style={{ background: "#3B6D11" }} />
-                <span className="hp-mini-label" style={{ color: "#3B6D11" }}>Learn</span>
+              <div className="shipped-top">
+                <div>
+                  <p className="shipped-label" style={{ color: "#3B6D11", background: "#EAF3DE" }}>
+                    Learn
+                  </p>
+                  <p className="shipped-name">skim.</p>
+                </div>
+                <span className="shipped-status">Live</span>
               </div>
-              <p className="hp-mini-name" style={{ color: "#1a1a1a" }}>skim.</p>
-              <p className="hp-mini-tagline" style={{ color: "#6b7280" }}>Read less, know more.</p>
-              <p className="hp-mini-url" style={{ color: "#9ca3af" }}>skim.getorvo.co</p>
+              <div className="shipped-bottom">
+                <p className="shipped-desc">
+                  Drop in anything you need to learn. It builds the lesson around you.
+                </p>
+                <p className="shipped-url">skim.getorvo.co</p>
+              </div>
             </a>
 
-            {/* Mentor — teal */}
+            {/* Mentor */}
             <a
               href="https://mentor.getorvo.co"
               target="_blank"
               rel="noopener noreferrer"
-              className="hp-mini-card hp-mini-card--teal"
+              className="shipped-card"
             >
-              <div className="hp-mini-top">
-                <span className="hp-mini-pulse" style={{ background: "#99f6e4" }} />
-                <span className="hp-mini-label" style={{ color: "#ccfbf1" }}>Career</span>
+              <div className="shipped-top">
+                <div>
+                  <p className="shipped-label" style={{ color: "#0F6E56", background: "#E1F5EE" }}>
+                    Career
+                  </p>
+                  <p className="shipped-name">Mentor</p>
+                </div>
+                <span className="shipped-status">Live</span>
               </div>
-              <p className="hp-mini-name" style={{ color: "#f0fdfa" }}>Mentor</p>
-              <p className="hp-mini-tagline" style={{ color: "#99f6e4" }}>You&apos;re worth more than you think.</p>
-              <p className="hp-mini-url" style={{ color: "#5eead4" }}>mentor.getorvo.co</p>
-            </a>
-          </div>
-          <div className="hp-shipped-more">
-            <a href="/work" className="hp-more-link">
-              See full work &amp; case studies →
+              <div className="shipped-bottom">
+                <p className="shipped-desc">
+                  Connects what you know to people willing to pay for it.
+                </p>
+                <p className="shipped-url">mentor.getorvo.co</p>
+              </div>
             </a>
           </div>
         </section>
@@ -190,12 +222,8 @@ export default function Home() {
               <ul>
                 <li>Diagnose the real problem — not the surface symptoms</li>
                 <li>Define the strategy and what to build</li>
-                <li>
-                  Deliver roadmap, MVP spec, and 90-day execution plan
-                </li>
-                <li>
-                  Built and delivered inside <Orchpad />
-                </li>
+                <li>Deliver roadmap, MVP spec, and 90-day execution plan</li>
+                <li>Built and delivered inside <Orchpad /></li>
               </ul>
               <Tags tags={["2 weeks", "Diagnosis", "Roadmap"]} />
               <a
@@ -217,9 +245,7 @@ export default function Home() {
                 <li>Embedded in your team 10hrs/week</li>
                 <li>Own a product vertical or business function end-to-end</li>
                 <li>Diagnose, prioritize, execute, and close the loop</li>
-                <li>
-                  Delivered inside <Orchpad />
-                </li>
+                <li>Delivered inside <Orchpad /></li>
               </ul>
               <Tags tags={["Ongoing", "Embedded", "Multi-agent"]} />
               <a
@@ -231,10 +257,8 @@ export default function Home() {
                 Embed with me →
               </a>
             </div>
-
           </div>
         </section>
-
       </main>
 
       <footer>

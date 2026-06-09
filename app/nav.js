@@ -1,5 +1,7 @@
 import ThemeToggle from "./theme-toggle";
 
+const BOOKING_HREF = "https://calendly.com/eslam-orchpad/30min";
+
 export default function Nav() {
   return (
     <nav className="nav">
@@ -11,8 +13,8 @@ export default function Nav() {
         </span>
       </a>
       <div className="nav-right">
-        <a href="/work" className="nav-link">
-          Work
+        <a href={BOOKING_HREF} target="_blank" rel="noopener noreferrer" className="nav-book-btn">
+          Book a call
         </a>
         <ThemeToggle />
       </div>

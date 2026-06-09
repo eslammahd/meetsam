@@ -377,6 +377,23 @@ section.section {
   color: var(--text);
 }
 
+.nav-book-btn {
+  font-family: "Outfit", system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text);
+  text-decoration: none;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 6px 14px;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.nav-book-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
 /* ---------- Work page ---------- */
 .work-eyebrow {
   font-size: 11px;
@@ -705,6 +722,14 @@ section.section {
   font-size: 11px;
   color: var(--text-muted);
   line-height: 1.4;
+}
+
+.shipped-desc {
+  font-family: system-ui, sans-serif;
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.55;
+  margin-top: 8px;
 }
 
 .shipped-url {
