@@ -197,7 +197,7 @@ h3 {
   .hero-2col {
     grid-template-columns: 3fr 2fr;
     gap: 64px;
-    align-items: center;
+    align-items: start;
   }
 }
 
@@ -209,20 +209,33 @@ h3 {
 .hero-right {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 0;
+  padding-top: 60px;
 }
 
 .hero-stat-card {
-  background: #F7F7F7;
-  border-radius: 10px;
-  padding: 20px 24px;
-  border-left: 3px solid #1A1A1A;
+  background: transparent;
+  border-radius: 0;
+  padding: 0 0 16px 20px;
+  border-left: 2px solid #EBEBEB;
+  border-bottom: 0.5px solid #EBEBEB;
+  margin-bottom: 16px;
+  transition: border-left-color 0.2s ease;
+}
+
+.hero-stat-card:hover {
+  border-left-color: var(--accent);
+}
+
+.hero-stat-card--last {
+  border-bottom: none;
+  margin-bottom: 0;
 }
 
 .hero-stat-num {
   font-family: "Outfit", system-ui, sans-serif;
   font-weight: 500;
-  font-size: 32px;
+  font-size: 28px;
   color: #1A1A1A;
   margin: 0 0 4px;
   line-height: 1;
@@ -243,7 +256,7 @@ h3 {
 
 .hero-stat-footer {
   text-align: right;
-  margin-top: 4px;
+  margin-top: 16px;
 }
 
 section.section {

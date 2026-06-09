@@ -51,19 +51,21 @@ export default function Home() {
             <h1 className="h1">
               I find what&apos;s broken. Then I fix it.
             </h1>
-            <p className="lead">
+            <p className="lead" style={{ marginTop: "20px" }}>
               I&apos;m Sam. I embed in your team, diagnose the real problem —
               not the obvious one — and build the fix. 6 years across B2B SaaS
               and marketplaces in MENA.
             </p>
-            <p className="hero-proof">
+            <p className="hero-proof" style={{ marginTop: "20px" }}>
               Currently available for new engagements · Cairo-based · async
               worldwide
             </p>
-            <Tags tags={["Marketplaces", "B2B SaaS", "Fintech & BNPL", "AI products", "MENA & KSA", "Growth & retention"]} />
-            <div>
+            <div style={{ marginTop: "16px" }}>
+              <Tags tags={["Marketplaces", "B2B SaaS", "Fintech & BNPL", "AI products", "MENA & KSA", "Growth & retention"]} />
+            </div>
+            <div style={{ marginTop: "24px" }}>
               <Cta />
-              <p className="note">
+              <p className="note" style={{ marginTop: "12px" }}>
                 No pitch. If I can&apos;t help, I&apos;ll tell you.
               </p>
             </div>
@@ -81,7 +83,7 @@ export default function Home() {
               <p className="hero-stat-label">BNPL activation increase</p>
               <p className="hero-stat-sub">Credit scorecards · B2B Egypt</p>
             </div>
-            <div className="hero-stat-card">
+            <div className="hero-stat-card hero-stat-card--last">
               <p className="hero-stat-num">4 weeks</p>
               <p className="hero-stat-label">zero to live product</p>
               <p className="hero-stat-sub">Orchpad · AI agent workflows</p>
