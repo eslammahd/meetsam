@@ -48,7 +48,7 @@
 @media (min-width: 1024px) {
   :root {
     --hero-pad: 40px 64px 64px;
-    --h1-size: 72px;
+    --h1-size: clamp(48px, 3.3vw, 60px);
     --pad-x: 64px;
   }
 }
@@ -293,6 +293,14 @@ section.section {
 @media (min-width: 768px) {
   .hero-br-desktop {
     display: inline;
+  }
+}
+
+/* On desktop, let the headline use the full column so the forced
+   three lines don't re-wrap from the narrow 16ch cap. */
+@media (min-width: 1024px) {
+  .h1 {
+    max-width: none;
   }
 }
 
