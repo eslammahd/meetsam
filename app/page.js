@@ -50,7 +50,7 @@ export default function Home() {
           <div className="hero-left">
             <p className="eyebrow">MEET SAM</p>
             <h1 className="h1">
-              Your product works but your numbers don&apos;t?<br />
+              Your product works<br className="hero-br-desktop" /> but your numbers don&apos;t?<br />
               <span className="h1-coda">Let&apos;s figure out why.</span>
             </h1>
             <p className="lead">

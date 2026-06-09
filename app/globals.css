@@ -286,6 +286,16 @@ section.section {
   font-style: italic;
 }
 
+.hero-br-desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .hero-br-desktop {
+    display: inline;
+  }
+}
+
 .lead {
   font-size: 17px;
   line-height: 1.62;
