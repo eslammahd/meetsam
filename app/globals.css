@@ -48,7 +48,7 @@
 @media (min-width: 1024px) {
   :root {
     --hero-pad: 40px 64px 64px;
-    --h1-size: clamp(48px, 3.3vw, 60px);
+    --h1-size: clamp(54px, 3.8vw, 69px);
     --pad-x: 64px;
   }
 }
