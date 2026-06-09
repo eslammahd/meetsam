@@ -27,16 +27,15 @@ function Cta() {
   );
 }
 
-const DOMAIN_CHIPS = [
-  "Two-sided marketplaces",
-  "B2B SaaS",
-  "AI products",
-  "Fintech & BNPL",
-  "MENA & KSA markets",
-  "Product strategy",
-  "Growth & retention",
-  "Multi-agent systems",
-];
+function Tags({ tags }) {
+  return (
+    <div className="inline-tags">
+      {tags.map((t) => (
+        <span key={t} className="inline-tag">{t}</span>
+      ))}
+    </div>
+  );
+}
 
 export default function Home() {
   return (
@@ -59,6 +58,7 @@ export default function Home() {
             Currently available for new engagements · Cairo-based · async
             worldwide
           </p>
+          <Tags tags={["Marketplaces", "B2B SaaS", "Fintech & BNPL", "AI products", "MENA & KSA", "Growth & retention"]} />
           <div>
             <Cta />
             <p className="note">
@@ -100,29 +100,24 @@ export default function Home() {
               <span className="hp-who-bg-num">01</span>
               <p className="hp-who-label">Something&apos;s off</p>
               <p className="hp-who-desc">You know the metrics aren&apos;t moving. You don&apos;t know exactly why.</p>
+              <Tags tags={["Activation", "Retention"]} />
             </div>
             <div className="hp-who-card">
               <span className="hp-who-bg-num">02</span>
               <p className="hp-who-label">Growth has stalled</p>
               <p className="hp-who-desc">The team is working hard. The numbers aren&apos;t moving. Nobody agrees on why.</p>
+              <Tags tags={["Growth", "Product strategy"]} />
             </div>
             <div className="hp-who-card">
               <span className="hp-who-bg-num">03</span>
               <p className="hp-who-label">You need an owner</p>
               <p className="hp-who-desc">Not another advisor. Someone embedded, accountable, end-to-end.</p>
+              <Tags tags={["Fractional", "End-to-end"]} />
             </div>
           </div>
         </section>
 
-        {/* 4 — Domains */}
-        <section className="section">
-          <p className="eyebrow">Domains</p>
-          <p className="hp-domains-text">
-            Marketplaces · B2B SaaS · AI products · Fintech &amp; BNPL · MENA &amp; KSA · Product strategy · Growth &amp; retention · Multi-agent systems
-          </p>
-        </section>
-
-        {/* 5 — Built & Shipped mini */}
+        {/* 4 — Built & Shipped mini */}
         <section className="section">
           <p className="eyebrow">Built &amp; Shipped</p>
           <p className="hp-shipped-sub">
@@ -184,7 +179,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 6 — Work with Sam */}
+        {/* 5 — Work with Sam */}
         <section className="section">
           <p className="eyebrow">Work with Sam</p>
           <div className="cards">
@@ -203,6 +198,7 @@ export default function Home() {
                   Built and delivered inside <Orchpad />
                 </li>
               </ul>
+              <Tags tags={["2 weeks", "Diagnosis", "Roadmap"]} />
               <a
                 href={BOOKING_HREF}
                 target="_blank"
@@ -226,6 +222,7 @@ export default function Home() {
                   Delivered inside <Orchpad />
                 </li>
               </ul>
+              <Tags tags={["Ongoing", "Embedded", "Multi-agent"]} />
               <a
                 href={BOOKING_HREF}
                 target="_blank"

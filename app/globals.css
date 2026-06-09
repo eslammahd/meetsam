@@ -1309,3 +1309,20 @@ footer .link:hover {
   margin-top: 40px;
   text-align: center;
 }
+
+/* Inline tags */
+.inline-tags {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.inline-tag {
+  font-size: 11px;
+  color: var(--text-muted);
+  border: 0.5px solid var(--border);
+  border-radius: 4px;
+  padding: 3px 8px;
+  background: transparent;
+}
