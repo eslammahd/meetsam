@@ -239,34 +239,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 7 — Closing: steps + CTA */}
-        <section className="section hp-closing-section">
-          <h2 className="hp-closing-headline">Let&apos;s figure out what&apos;s broken.</h2>
-          <div className="hp-steps-list">
-            <div className="hp-step">
-              <p className="hp-step-num">01</p>
-              <p className="hp-step-text">Book a free 30-min call</p>
-            </div>
-            <div className="hp-step">
-              <p className="hp-step-num">02</p>
-              <p className="hp-step-text">I diagnose your problem — if I can&apos;t help, I&apos;ll tell you</p>
-            </div>
-            <div className="hp-step">
-              <p className="hp-step-num">03</p>
-              <p className="hp-step-text">We agree on scope and price</p>
-            </div>
-            <div className="hp-step">
-              <p className="hp-step-num">04</p>
-              <p className="hp-step-text">I build, you ship</p>
-            </div>
-          </div>
-          <div className="hp-closing-cta">
-            <Cta />
-            <p className="note">
-              No pitch. If I can&apos;t help, I&apos;ll tell you.
-            </p>
-          </div>
-        </section>
       </main>
 
       <footer>
