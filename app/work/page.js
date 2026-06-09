@@ -55,7 +55,7 @@ export default function Work() {
                     Orchpad
                   </p>
                 </div>
-                <span className="shipped-badge">Invite only</span>
+                <span className="shipped-status" style={{ background: "#F3F0FF", color: "#5B3DC7", border: "0.5px solid #5B3DC7" }}>Invite only</span>
               </div>
               <div className="shipped-bottom">
                 <div className="shipped-dots-row">
@@ -91,6 +91,7 @@ export default function Work() {
                     skim.
                   </p>
                 </div>
+                <span className="shipped-status">Live</span>
               </div>
               <div className="shipped-bottom">
                 <p className="shipped-tagline">
@@ -118,6 +119,7 @@ export default function Work() {
                     Mentor
                   </p>
                 </div>
+                <span className="shipped-status">Live</span>
               </div>
               <div className="shipped-bottom">
                 <p className="shipped-hook">

@@ -632,6 +632,18 @@ section.section {
   white-space: nowrap;
 }
 
+.shipped-status {
+  font-size: 10px;
+  font-weight: 500;
+  background: #EDFAF3;
+  color: #1A7A48;
+  border: 0.5px solid #1A7A48;
+  border-radius: 20px;
+  padding: 3px 8px;
+  white-space: nowrap;
+  align-self: flex-start;
+}
+
 .shipped-bottom {
   display: flex;
   flex-direction: column;
