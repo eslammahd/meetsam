@@ -294,8 +294,29 @@ section.section {
   line-height: 1.6;
   color: var(--text-muted);
   max-width: 70ch;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Hero left column — scoped vertical rhythm */
+.hero-left .h1 {
+  margin-top: 16px;
+}
+
+.hero-left .lead {
   margin-top: 24px;
-  margin-bottom: 32px;
+}
+
+.hero-left .hero-proof {
+  margin-top: 16px;
+}
+
+.hero-cta-block {
+  margin-top: 32px;
+}
+
+.hero-cta-block .note {
+  margin-top: 12px;
 }
 
 .note {

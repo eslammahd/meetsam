@@ -51,18 +51,18 @@ export default function Home() {
             <h1 className="h1">
               I find what&apos;s broken. Then I fix it.
             </h1>
-            <p className="lead" style={{ marginTop: "20px" }}>
+            <p className="lead">
               I&apos;m Sam. I embed in your team, diagnose the real problem —
               not the obvious one — and build the fix. 6 years across B2B SaaS
               and marketplaces in MENA.
             </p>
-            <p className="hero-proof" style={{ marginTop: "20px" }}>
+            <p className="hero-proof">
               Currently available for new engagements · Cairo-based · async
               worldwide
             </p>
-            <div style={{ marginTop: "24px" }}>
+            <div className="hero-cta-block">
               <Cta />
-              <p className="note" style={{ marginTop: "12px" }}>
+              <p className="note">
                 No pitch. If I can&apos;t help, I&apos;ll tell you.
               </p>
             </div>
