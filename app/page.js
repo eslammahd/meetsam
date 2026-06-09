@@ -55,12 +55,8 @@ export default function Home() {
             </h1>
             <p className="lead">
               I&apos;m Sam. I embed in your team, diagnose the real problem —
-              not the obvious one — and build the fix. 6 years across B2B SaaS
+              not the obvious one — and build the fix. 6+ years across B2B SaaS
               and marketplaces in MENA.
-            </p>
-            <p className="hero-proof">
-              Currently available for new engagements · Cairo-based · async
-              worldwide
             </p>
             <div className="hero-cta-block">
               <Cta />
@@ -269,7 +265,7 @@ export default function Home() {
           <ExternalLink href="https://landing.orchpad.getorvo.co/blog">Blog</ExternalLink>
           <ExternalLink href="https://www.linkedin.com/in/eslamelmahdy/">LinkedIn</ExternalLink>
         </div>
-        <p className="footer-legal">Orvo AI Ltd · Registered in England &amp; Wales · No. 17227105 · London, UK</p>
+        <p className="footer-legal">Orvo AI Ltd · No. 17227105 · London, UK</p>
       </footer>
     </>
   );

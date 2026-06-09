@@ -2,56 +2,6 @@
 
 import { useState } from "react";
 
-/* ── Illustrations ─────────────────────────────────────────────── */
-
-function SearchIllo() {
-  return (
-    <svg width="80" height="72" viewBox="0 0 80 72" fill="none" aria-hidden="true">
-      <rect x="6" y="10" width="38" height="6" rx="3" fill="rgba(255,255,255,0.15)" />
-      <rect x="6" y="22" width="30" height="6" rx="3" fill="rgba(255,255,255,0.08)" />
-      <rect x="6" y="34" width="34" height="6" rx="3" fill="rgba(255,255,255,0.15)" />
-      <circle cx="54" cy="46" r="15" stroke="#ffffff" strokeWidth="2.5" fill="none" />
-      <circle cx="54" cy="46" r="7" fill="rgba(255,255,255,0.15)" />
-      <line x1="64.5" y1="57" x2="74" y2="66" stroke="#ffffff" strokeWidth="2.5" strokeLinecap="round" />
-      <path d="M54 41v10M49 46h10" stroke="#ffffff" strokeWidth="1.8" strokeLinecap="round" />
-    </svg>
-  );
-}
-
-function DonutIllo() {
-  const r = 24;
-  const cx = 40;
-  const cy = 36;
-  const circ = 2 * Math.PI * r;
-  const filled = circ * 0.25;
-  const gap = circ * 0.75;
-  return (
-    <svg width="80" height="72" viewBox="0 0 80 72" fill="none" aria-hidden="true">
-      <circle cx={cx} cy={cy} r={r} stroke="rgba(255,255,255,0.15)" strokeWidth="9" fill="none" />
-      <circle
-        cx={cx} cy={cy} r={r}
-        stroke="#ffffff" strokeWidth="9" fill="none"
-        strokeDasharray={`${filled} ${gap}`}
-        strokeLinecap="round"
-        transform={`rotate(-90 ${cx} ${cy})`}
-      />
-      <text x={cx} y={cy + 4} textAnchor="middle" fill="#ffffff" fontSize="11" fontWeight="600" fontFamily="Outfit, system-ui, sans-serif">25%</text>
-    </svg>
-  );
-}
-
-function BarIllo() {
-  return (
-    <svg width="80" height="72" viewBox="0 0 80 72" fill="none" aria-hidden="true">
-      <rect x="10" y="46" width="12" height="16" rx="3" fill="rgba(255,255,255,0.15)" />
-      <rect x="28" y="32" width="12" height="30" rx="3" fill="rgba(255,255,255,0.25)" />
-      <rect x="46" y="18" width="12" height="44" rx="3" fill="#ffffff" />
-      <path d="M16 44 L34 30 L52 14" stroke="#ffffff" strokeWidth="1.5" strokeLinecap="round" strokeDasharray="4 2.5" />
-      <path d="M48 10 L52 14 L56 10" stroke="#ffffff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none" />
-    </svg>
-  );
-}
-
 /* ── Chat Scene ────────────────────────────────────────────────── */
 
 function RobotIcon() {
@@ -154,7 +104,6 @@ const cases = [
     result: "15% search success · 45% faster AI delivery",
     title: "CA-Pilot — LLM-powered search assistant",
     tags: ["Enterprise SaaS", "LLM", "AI validation"],
-    illo: <SearchIllo />,
     situation:
       "Enterprise users were failing to get useful data — not because the data wasn't there, but because building Boolean search queries required technical fluency most users didn't have. Low adoption was being misread as a UX problem.",
     diagnosis:
@@ -175,7 +124,6 @@ const cases = [
     result: "25% fewer cancellations · 45% retention uplift",
     title: "Cancellation risk model + loyalty system",
     tags: ["Marketplace", "AI model", "Retention"],
-    illo: <DonutIllo />,
     situation:
       "A home services marketplace in Saudi Arabia was bleeding on two fronts: high cancellation rates and weak repeat usage. Both were being treated as operations problems — more calls, more manual intervention.",
     diagnosis:
@@ -197,7 +145,6 @@ const cases = [
     result: "40% BNPL activation · 35% profit growth",
     title: "BNPL scorecards + demand growth",
     tags: ["Fintech", "B2B", "Growth"],
-    illo: <BarIllo />,
     situation:
       "A B2B marketplace in Egypt had a BNPL vertical with low activation and a demand side growing slowly despite an active growth team. The roadmap was feature-heavy but the real blockers were in the funnel and the credit logic.",
     diagnosis:
@@ -243,7 +190,6 @@ export default function CaseStudies() {
                     ))}
                   </div>
                 </div>
-                <div className="cs-card-illo">{cs.illo}</div>
               </div>
 
               <div className="cs-toggle-row">
