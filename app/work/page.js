@@ -25,24 +25,15 @@ export default function Work() {
       <Nav />
 
       <main>
-        {/* Section 1 — Positioning */}
-        <section className="section work-intro">
-          <p className="work-positioning">
-            6 years diagnosing and fixing growth, activation, and retention
-            problems at B2B SaaS and marketplace companies across MENA —
-            increasingly using AI as the actual mechanism.
-          </p>
-        </section>
-
-        {/* Section 2 — Case Studies */}
+        {/* Section 1 — Case Studies */}
         <section className="section">
-          <p className="eyebrow">Case Studies</p>
+          <p className="work-eyebrow">Case Studies</p>
           <CaseStudies />
         </section>
 
-        {/* Section 3 — Built & Shipped */}
+        {/* Section 2 — Built & Shipped */}
         <section className="section">
-          <p className="eyebrow">Built &amp; Shipped</p>
+          <p className="work-eyebrow">Built &amp; Shipped</p>
           <p className="work-shipped-sub">
             Live products built under Orvo AI — shipped using AI-accelerated
             workflows.
@@ -143,30 +134,31 @@ export default function Work() {
           </div>
         </section>
 
-        {/* Section 4 — Domain Snapshot */}
+        {/* Section 3 — Depth */}
         <section className="section">
-          <p className="eyebrow">Depth</p>
-          <div className="work-depth">
-            <p>
-              Two-sided marketplaces — supply-demand dynamics, fulfillment,
-              liquidity, and loyalty systems across B2C and B2B models in MENA
-              and KSA.
-            </p>
-            <p>
-              B2B SaaS — activation funnels, retention loops, pricing strategy,
-              and AI-powered features at enterprise scale.
-            </p>
-            <p>
-              AI products — LLM feature scoping and validation, predictive risk
-              models, human-in-the-loop systems, and multi-agent build
-              workflows.
-            </p>
+          <p className="work-eyebrow">Depth</p>
+          <div className="work-depth-rows">
+            <div className="work-depth-row">
+              <span className="work-depth-num">01</span>
+              <span className="work-depth-label">Two-sided marketplaces</span>
+              <p className="work-depth-desc">Supply-demand dynamics, fulfillment, liquidity, and loyalty systems — B2C and B2B across MENA and KSA.</p>
+            </div>
+            <div className="work-depth-row">
+              <span className="work-depth-num">02</span>
+              <span className="work-depth-label">B2B SaaS</span>
+              <p className="work-depth-desc">Activation funnels, retention loops, pricing strategy, and AI-powered features at enterprise scale.</p>
+            </div>
+            <div className="work-depth-row">
+              <span className="work-depth-num">03</span>
+              <span className="work-depth-label">AI products</span>
+              <p className="work-depth-desc">LLM feature scoping, predictive risk models, human-in-the-loop systems, and multi-agent build workflows.</p>
+            </div>
           </div>
         </section>
 
-        {/* Section 5 — CTA */}
+        {/* Section 4 — CTA */}
         <section className="section">
-          <p className="eyebrow">Get in touch</p>
+          <p className="work-eyebrow">Get in touch</p>
           <h2 className="section-title">
             Let&apos;s talk about what you&apos;re building.
           </h2>
