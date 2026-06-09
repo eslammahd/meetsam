@@ -59,24 +59,6 @@ const cases = [
   },
 ];
 
-function FoxSvg() {
-  return (
-    <svg width="120" height="108" viewBox="0 0 60 52" fill="none" aria-hidden="true">
-      <ellipse cx="30" cy="34" rx="22" ry="16" fill="#1A1A1A" />
-      <polygon points="14,22 10,8 20,18" fill="#1A1A1A" />
-      <polygon points="46,22 50,8 40,18" fill="#1A1A1A" />
-      <polygon points="15,21 11,10 19,18" fill="#8FBA24" />
-      <polygon points="45,21 49,10 41,18" fill="#8FBA24" />
-      <rect x="14" y="26" width="14" height="9" rx="3" fill="#F7F6F1" />
-      <rect x="32" y="26" width="14" height="9" rx="3" fill="#F7F6F1" />
-      <rect x="26" y="29" width="8" height="3" rx="1" fill="#F7F6F1" />
-      <circle cx="21" cy="30" r="3.5" fill="#8FBA24" />
-      <circle cx="39" cy="30" r="3.5" fill="#8FBA24" />
-      <circle cx="21" cy="30" r="1.2" fill="#1A1A1A" />
-      <circle cx="39" cy="30" r="1.2" fill="#1A1A1A" />
-    </svg>
-  );
-}
 
 export default function Work() {
   return (
@@ -216,16 +198,6 @@ export default function Work() {
                     skim.
                   </p>
                 </div>
-              </div>
-              <div
-                style={{
-                  position: "absolute",
-                  bottom: "-10px",
-                  right: "-10px",
-                  pointerEvents: "none",
-                }}
-              >
-                <FoxSvg />
               </div>
               <div className="shipped-bottom">
                 <p
