@@ -997,10 +997,30 @@ footer .link:hover {
 }
 
 .hp-stat-card {
-  background: var(--bg-raised);
-  border: 1px solid var(--border);
-  border-radius: 10px;
+  background: transparent;
+  border-left: 3px solid var(--accent);
+  border-radius: 0;
   padding: 20px 24px;
+  transition: background 0.2s;
+}
+
+.hp-stat-card:hover {
+  background: #FFF5F0;
+}
+
+.hp-stat-footer {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.hp-stat-more {
+  font-size: 13px;
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.hp-stat-more:hover {
+  color: var(--accent);
 }
 
 .hp-stat-num {

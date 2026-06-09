@@ -69,6 +69,7 @@ export default function Home() {
 
         {/* 2 — Quick Proof */}
         <section className="section hp-stat-section">
+          <p className="eyebrow">Proof of Work</p>
           <div className="hp-stat-grid">
             <div className="hp-stat-card">
               <p className="hp-stat-num">25%</p>
@@ -85,6 +86,9 @@ export default function Home() {
               <p className="hp-stat-label">zero to live product</p>
               <p className="hp-stat-sub">Orchpad · AI agent workflows</p>
             </div>
+          </div>
+          <div className="hp-stat-footer">
+            <a href="/work" className="hp-stat-more">See all case studies →</a>
           </div>
         </section>
 
