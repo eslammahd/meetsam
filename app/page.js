@@ -138,22 +138,22 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
               className="shipped-card"
-              style={{ background: "#0F1117", borderColor: "rgba(255,255,255,0.08)" }}
+              style={{ background: "#1C1F2E", borderColor: "rgba(255,255,255,0.08)" }}
             >
               <div className="shipped-top">
                 <div>
-                  <p className="shipped-label" style={{ color: "#a5b4fc", background: "rgba(99,102,241,0.2)" }}>Build</p>
-                  <p className="shipped-name" style={{ color: "#f1f5f9" }}>Orchpad</p>
-                  <p className="shipped-desc" style={{ color: "#9091A4" }}>
+                  <p className="shipped-label" style={{ color: "#818cf8", background: "rgba(99,102,241,0.2)" }}>Build</p>
+                  <p className="shipped-name" style={{ color: "#E8E9F2", fontSize: "26px" }}>Orchpad</p>
+                  <p className="shipped-desc" style={{ color: "#A0A3B8" }}>
                     An AI-native workspace where founders turn ideas into shipped products using agent workflows.
                   </p>
                 </div>
-                <span className="shipped-status" style={{ background: "#1e1b4b", color: "#a5b4fc", border: "0.5px solid #4f46e5" }}>Invite only</span>
+                <span className="shipped-status" style={{ background: "#2D2A5E", color: "#B5A6F0", border: "0.5px solid #5B3DC7" }}>Invite only</span>
               </div>
               <div className="shipped-bottom">
                 <div className="shipped-card-footer">
-                  <p className="shipped-url" style={{ color: "#4a4b5e" }}>orchpad.com</p>
-                  <span className="shipped-arrow" style={{ color: "#4a4b5e" }}>↗</span>
+                  <p className="shipped-url" style={{ color: "rgba(99,102,241,0.6)" }}>orchpad.com</p>
+                  <span className="shipped-arrow" style={{ color: "rgba(99,102,241,0.6)" }}>↗</span>
                 </div>
               </div>
             </a>
