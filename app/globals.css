@@ -337,6 +337,43 @@ section.section {
   margin-top: 8px;
 }
 
+.cs-result-hero {
+  font-family: "Outfit", system-ui, sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: #d85a30;
+  line-height: 1.3;
+  margin-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+  .cs-result-hero {
+    font-size: 28px;
+  }
+}
+
+.cs-body {
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.cs-toggle {
+  display: inline-block;
+  margin-top: 18px;
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: system-ui, sans-serif;
+  font-size: 13px;
+  color: var(--text-muted);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.cs-toggle:hover {
+  color: var(--text);
+}
+
 .cs-rows {
   display: flex;
   flex-direction: column;
