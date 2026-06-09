@@ -60,9 +60,6 @@ export default function Home() {
               Currently available for new engagements · Cairo-based · async
               worldwide
             </p>
-            <div style={{ marginTop: "16px" }}>
-              <Tags tags={["Marketplaces", "B2B SaaS", "Fintech & BNPL", "AI products", "MENA & KSA", "Growth & retention"]} />
-            </div>
             <div style={{ marginTop: "24px" }}>
               <Cta />
               <p className="note" style={{ marginTop: "12px" }}>
