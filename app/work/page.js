@@ -36,7 +36,7 @@ const cases = [
       "15% improvement in search success rate. AI delivery speed increased 45% through the validation protocol. Reduced CX dependency for query-building across the enterprise client base.",
   },
   {
-    company: "FANNI · 2022–2024",
+    company: "HOME SERVICES MARKETPLACE · KSA · 2022–2024",
     title: "Cancellation risk model + loyalty system",
     result: "25% fewer cancellations · 45% retention uplift for engaged segment",
     situation:
