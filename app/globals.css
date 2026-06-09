@@ -406,13 +406,21 @@ section.section {
 
 /* Case study cards */
 .cs-cards {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
   margin-top: 28px;
 }
 
+@media (min-width: 900px) {
+  .cs-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .cs-card {
+  display: flex;
+  flex-direction: column;
   background: var(--bg-raised);
   border: 0.5px solid var(--border);
   border-radius: 12px;
@@ -428,6 +436,9 @@ section.section {
   padding: 20px 24px;
   cursor: pointer;
   user-select: none;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .cs-card-top {
@@ -619,6 +630,7 @@ section.section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-height: 220px;
   min-height: 200px;
   background: var(--bg-raised);
   border-radius: 10px;
@@ -627,11 +639,23 @@ section.section {
   text-decoration: none;
   position: relative;
   overflow: hidden;
-  transition: border-color 0.15s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .shipped-card:hover {
-  border-color: var(--text-muted);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.shipped-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shipped-arrow {
+  font-size: 14px;
+  line-height: 1;
 }
 
 .shipped-top {

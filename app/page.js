@@ -50,7 +50,9 @@ export default function Home() {
           <div className="hero-left">
             <p className="eyebrow">MEET SAM</p>
             <h1 className="h1">
-              I find what&apos;s broken. Then I fix it.
+              Your product works.<br />
+              Your numbers don&apos;t.<br />
+              Let&apos;s figure out why.
             </h1>
             <p className="lead">
               I&apos;m Sam. I embed in your team, diagnose the real problem —
@@ -130,81 +132,81 @@ export default function Home() {
             Three products I built from scratch, alone, in my free time. No team. No budget. Just curiosity and too many late nights.
           </p>
           <div className="shipped-grid">
-            {/* Orchpad */}
+            {/* Orchpad — dark */}
             <a
               href="https://orchpad.com"
               target="_blank"
               rel="noopener noreferrer"
               className="shipped-card"
+              style={{ background: "#0F1117", borderColor: "rgba(255,255,255,0.08)" }}
             >
               <div className="shipped-top">
                 <div>
-                  <p className="shipped-label" style={{ color: "#6366f1", background: "rgba(99,102,241,0.125)" }}>
-                    Build
+                  <p className="shipped-label" style={{ color: "#a5b4fc", background: "rgba(99,102,241,0.2)" }}>Build</p>
+                  <p className="shipped-name" style={{ color: "#f1f5f9" }}>Orchpad</p>
+                  <p className="shipped-desc" style={{ color: "#9091A4" }}>
+                    An AI-native workspace where founders turn ideas into shipped products using agent workflows.
                   </p>
-                  <p className="shipped-name">Orchpad</p>
                 </div>
-                <span className="shipped-status" style={{ background: "#F3F0FF", color: "#5B3DC7", border: "0.5px solid #5B3DC7" }}>Invite only</span>
+                <span className="shipped-status" style={{ background: "#1e1b4b", color: "#a5b4fc", border: "0.5px solid #4f46e5" }}>Invite only</span>
               </div>
               <div className="shipped-bottom">
-                <div className="shipped-dots-row">
-                  <span className="shipped-dot" style={{ background: "#6366f1" }} />
-                  <span className="shipped-dot" style={{ background: "#818cf8" }} />
-                  <span className="shipped-dot" style={{ background: "#4f46e5" }} />
-                  <span className="shipped-dots-label">Build · Studio · Signal</span>
+                <div className="shipped-card-footer">
+                  <p className="shipped-url" style={{ color: "#4a4b5e" }}>orchpad.com</p>
+                  <span className="shipped-arrow" style={{ color: "#4a4b5e" }}>↗</span>
                 </div>
-                <p className="shipped-desc">
-                  An AI-native workspace where founders turn ideas into shipped products using agent workflows.
-                </p>
-                <p className="shipped-url">orchpad.com</p>
               </div>
             </a>
 
-            {/* skim. */}
+            {/* skim. — warm cream */}
             <a
               href="https://skim.getorvo.co"
               target="_blank"
               rel="noopener noreferrer"
               className="shipped-card"
+              style={{ background: "#EAE8E1", borderColor: "rgba(0,0,0,0.06)" }}
             >
               <div className="shipped-top">
                 <div>
-                  <p className="shipped-label" style={{ color: "#3B6D11", background: "#EAF3DE" }}>
-                    Learn
+                  <p className="shipped-label" style={{ color: "#3B6D11", background: "rgba(59,109,17,0.12)" }}>Learn</p>
+                  <p className="shipped-name" style={{ color: "#1a1a1a" }}>skim.</p>
+                  <p className="shipped-desc" style={{ color: "#6B6B5A" }}>
+                    Drop in anything you need to learn. It builds the lesson around you.
                   </p>
-                  <p className="shipped-name">skim.</p>
                 </div>
                 <span className="shipped-status">Live</span>
               </div>
               <div className="shipped-bottom">
-                <p className="shipped-desc">
-                  Drop in anything you need to learn. It builds the lesson around you.
-                </p>
-                <p className="shipped-url">skim.getorvo.co</p>
+                <div className="shipped-card-footer">
+                  <p className="shipped-url" style={{ color: "#9ca3af" }}>skim.getorvo.co</p>
+                  <span className="shipped-arrow" style={{ color: "#9ca3af" }}>↗</span>
+                </div>
               </div>
             </a>
 
-            {/* Mentor */}
+            {/* Mentor — teal */}
             <a
               href="https://mentor.getorvo.co"
               target="_blank"
               rel="noopener noreferrer"
               className="shipped-card"
+              style={{ background: "#0D9488", borderColor: "rgba(255,255,255,0.12)" }}
             >
               <div className="shipped-top">
                 <div>
-                  <p className="shipped-label" style={{ color: "#0F6E56", background: "#E1F5EE" }}>
-                    Career
+                  <p className="shipped-label" style={{ color: "#ccfbf1", background: "rgba(255,255,255,0.15)" }}>Career</p>
+                  <p className="shipped-name" style={{ color: "#f0fdfa" }}>Mentor</p>
+                  <p className="shipped-desc" style={{ color: "#ccfbf1" }}>
+                    Connects what you know to people willing to pay for it.
                   </p>
-                  <p className="shipped-name">Mentor</p>
                 </div>
-                <span className="shipped-status">Live</span>
+                <span className="shipped-status" style={{ background: "rgba(255,255,255,0.15)", color: "#ccfbf1", border: "0.5px solid rgba(255,255,255,0.3)" }}>Live</span>
               </div>
               <div className="shipped-bottom">
-                <p className="shipped-desc">
-                  Connects what you know to people willing to pay for it.
-                </p>
-                <p className="shipped-url">mentor.getorvo.co</p>
+                <div className="shipped-card-footer">
+                  <p className="shipped-url" style={{ color: "#5eead4" }}>mentor.getorvo.co</p>
+                  <span className="shipped-arrow" style={{ color: "#5eead4" }}>↗</span>
+                </div>
               </div>
             </a>
           </div>
