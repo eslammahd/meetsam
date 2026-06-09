@@ -209,24 +209,11 @@ export default function Work() {
       <footer>
         <div className="footer-links">
           <span>Meet Sam</span>
-          <a
-            href="https://landing.orchpad.getorvo.co/blog"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="link"
-          >
-            Blog
-          </a>
-          <a
-            href={LINKEDIN_HREF}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="link"
-          >
-            LinkedIn
-          </a>
+          <a href="https://www.getorvo.co" target="_blank" rel="noopener noreferrer" className="link">Orvo AI Ltd</a>
+          <a href="https://landing.orchpad.getorvo.co/blog" target="_blank" rel="noopener noreferrer" className="link">Blog</a>
+          <a href={LINKEDIN_HREF} target="_blank" rel="noopener noreferrer" className="link">LinkedIn</a>
         </div>
-        <span>Fractional Operator &amp; product builder</span>
+        <p className="footer-legal">Orvo AI Ltd · Registered in England &amp; Wales · No. 17227105 · London, UK</p>
       </footer>
     </>
   );

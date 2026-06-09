@@ -1055,6 +1055,13 @@ footer .link:hover {
   color: var(--accent);
 }
 
+.footer-legal {
+  font-size: 11px;
+  color: var(--text-muted);
+  opacity: 0.5;
+  margin: 0;
+}
+
 /* ── Homepage new sections ─────────────────────────────────────── */
 
 /* Quick Proof stats */

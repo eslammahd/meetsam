@@ -243,14 +243,11 @@ export default function Home() {
       <footer>
         <div className="footer-links">
           <span>Meet Sam</span>
-          <ExternalLink href="https://landing.orchpad.getorvo.co/blog">
-            Blog
-          </ExternalLink>
-          <ExternalLink href="https://www.linkedin.com/in/eslamelmahdy/">
-            LinkedIn
-          </ExternalLink>
+          <ExternalLink href="https://www.getorvo.co">Orvo AI Ltd</ExternalLink>
+          <ExternalLink href="https://landing.orchpad.getorvo.co/blog">Blog</ExternalLink>
+          <ExternalLink href="https://www.linkedin.com/in/eslamelmahdy/">LinkedIn</ExternalLink>
         </div>
-        <span>Fractional Operator &amp; product builder</span>
+        <p className="footer-legal">Orvo AI Ltd · Registered in England &amp; Wales · No. 17227105 · London, UK</p>
       </footer>
     </>
   );
