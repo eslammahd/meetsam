@@ -61,7 +61,7 @@ const cases = [
 
 function FoxSvg() {
   return (
-    <svg width="40" height="36" viewBox="0 0 60 52" fill="none" aria-hidden="true">
+    <svg width="60" height="54" viewBox="0 0 60 52" fill="none" aria-hidden="true">
       <ellipse cx="30" cy="34" rx="22" ry="16" fill="#1A1A1A" />
       <polygon points="14,22 10,8 20,18" fill="#1A1A1A" />
       <polygon points="46,22 50,8 40,18" fill="#1A1A1A" />
@@ -216,6 +216,8 @@ export default function Work() {
                     skim.
                   </p>
                 </div>
+              </div>
+              <div style={{ display: "flex", justifyContent: "center", alignItems: "center", flex: 1 }}>
                 <FoxSvg />
               </div>
               <div className="shipped-bottom">
