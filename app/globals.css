@@ -485,17 +485,18 @@ section.section {
   flex-direction: column;
   justify-content: space-between;
   min-height: 200px;
-  border-radius: 14px;
+  background: var(--bg-raised);
+  border-radius: 10px;
   border: 0.5px solid var(--border);
-  padding: 20px;
+  padding: 24px;
   text-decoration: none;
   position: relative;
   overflow: hidden;
-  transition: opacity 0.15s ease;
+  transition: border-color 0.15s ease;
 }
 
 .shipped-card:hover {
-  opacity: 0.88;
+  border-color: var(--text-muted);
 }
 
 .shipped-top {
@@ -505,26 +506,30 @@ section.section {
 }
 
 .shipped-label {
+  display: inline-block;
   font-size: 11px;
   font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  border-radius: 20px;
+  padding: 3px 8px;
 }
 
 .shipped-name {
   font-family: "Outfit", system-ui, sans-serif;
   font-size: 22px;
   font-weight: 500;
-  margin-top: 4px;
+  color: var(--text);
+  margin-top: 8px;
   line-height: 1.1;
 }
 
 .shipped-badge {
   font-size: 10px;
   font-weight: 500;
-  background: rgba(99, 102, 241, 0.125);
-  color: #a5b4fc;
-  border: 0.5px solid rgba(99, 102, 241, 0.25);
+  background: var(--bg);
+  color: var(--text-muted);
+  border: 0.5px solid var(--border);
   border-radius: 20px;
   padding: 3px 8px;
   white-space: nowrap;
@@ -553,12 +558,14 @@ section.section {
 .shipped-dots-label {
   font-size: 10px;
   margin-left: 4px;
+  color: var(--text-muted);
 }
 
 .shipped-hook {
   font-family: system-ui, sans-serif;
   font-size: 20px;
   font-weight: 500;
+  color: var(--text);
   line-height: 1.4;
   margin-bottom: 4px;
 }
@@ -566,13 +573,16 @@ section.section {
 .shipped-tagline {
   font-family: system-ui, sans-serif;
   font-size: 11px;
+  color: var(--text-muted);
   line-height: 1.4;
 }
 
 .shipped-url {
   font-family: system-ui, sans-serif;
   font-size: 10px;
+  color: var(--text-muted);
   margin-top: 2px;
+  opacity: 0.6;
 }
 
 /* CTA links */

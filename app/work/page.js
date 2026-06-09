@@ -54,17 +54,13 @@ export default function Work() {
               target="_blank"
               rel="noopener noreferrer"
               className="shipped-card"
-              style={{ background: "#0F1117" }}
             >
               <div className="shipped-top">
                 <div>
-                  <p className="shipped-label" style={{ color: "#6366f1" }}>
+                  <p className="shipped-label" style={{ color: "#6366f1", background: "rgba(99,102,241,0.125)" }}>
                     Build
                   </p>
-                  <p
-                    className="shipped-name"
-                    style={{ color: "#E8E9F2" }}
-                  >
+                  <p className="shipped-name">
                     Orchpad
                   </p>
                 </div>
@@ -72,35 +68,17 @@ export default function Work() {
               </div>
               <div className="shipped-bottom">
                 <div className="shipped-dots-row">
-                  <span
-                    className="shipped-dot"
-                    style={{ background: "#6366f1" }}
-                  />
-                  <span
-                    className="shipped-dot"
-                    style={{ background: "#818cf8" }}
-                  />
-                  <span
-                    className="shipped-dot"
-                    style={{ background: "#4f46e5" }}
-                  />
-                  <span
-                    className="shipped-dots-label"
-                    style={{ color: "rgba(99,102,241,0.5)" }}
-                  >
+                  <span className="shipped-dot" style={{ background: "#6366f1" }} />
+                  <span className="shipped-dot" style={{ background: "#818cf8" }} />
+                  <span className="shipped-dot" style={{ background: "#4f46e5" }} />
+                  <span className="shipped-dots-label">
                     Build · Studio · Signal
                   </span>
                 </div>
-                <p
-                  className="shipped-tagline"
-                  style={{ color: "rgba(232,233,242,0.7)" }}
-                >
+                <p className="shipped-tagline">
                   AI-native product workspace
                 </p>
-                <p
-                  className="shipped-url"
-                  style={{ color: "rgba(232,233,242,0.4)" }}
-                >
+                <p className="shipped-url">
                   orchpad.com
                 </p>
               </div>
@@ -112,32 +90,22 @@ export default function Work() {
               target="_blank"
               rel="noopener noreferrer"
               className="shipped-card"
-              style={{ background: "#F7F6F1" }}
             >
               <div className="shipped-top">
                 <div>
-                  <p className="shipped-label" style={{ color: "#8FBA24" }}>
+                  <p className="shipped-label" style={{ color: "#3B6D11", background: "#EAF3DE" }}>
                     Learn
                   </p>
-                  <p
-                    className="shipped-name"
-                    style={{ color: "#1A1A1A" }}
-                  >
+                  <p className="shipped-name">
                     skim.
                   </p>
                 </div>
               </div>
               <div className="shipped-bottom">
-                <p
-                  className="shipped-tagline"
-                  style={{ color: "rgba(26,26,26,0.7)" }}
-                >
+                <p className="shipped-tagline">
                   Read less, know more.
                 </p>
-                <p
-                  className="shipped-url"
-                  style={{ color: "rgba(26,26,26,0.4)" }}
-                >
+                <p className="shipped-url">
                   skim.getorvo.co
                 </p>
               </div>
@@ -149,38 +117,25 @@ export default function Work() {
               target="_blank"
               rel="noopener noreferrer"
               className="shipped-card"
-              style={{ background: "#0D9488" }}
             >
               <div className="shipped-top">
                 <div>
-                  <p className="shipped-label" style={{ color: "#a7f3d0" }}>
+                  <p className="shipped-label" style={{ color: "#0F6E56", background: "#E1F5EE" }}>
                     Career
                   </p>
-                  <p
-                    className="shipped-name"
-                    style={{ color: "#fff", fontSize: "26px" }}
-                  >
+                  <p className="shipped-name">
                     Mentor
                   </p>
                 </div>
               </div>
               <div className="shipped-bottom">
-                <p
-                  className="shipped-hook"
-                  style={{ color: "#fff" }}
-                >
+                <p className="shipped-hook">
                   You&apos;re worth more than you think.
                 </p>
-                <p
-                  className="shipped-tagline"
-                  style={{ color: "rgba(204,251,241,0.85)" }}
-                >
+                <p className="shipped-tagline">
                   Turn what you know into contracts
                 </p>
-                <p
-                  className="shipped-url"
-                  style={{ color: "rgba(255,255,255,0.4)" }}
-                >
+                <p className="shipped-url">
                   mentor.getorvo.co
                 </p>
               </div>
