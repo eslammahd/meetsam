@@ -69,7 +69,7 @@ export default function Home() {
 
         {/* 2 — Quick Proof */}
         <section className="section hp-stat-section">
-          <p className="eyebrow">Proof of Work</p>
+          <p className="eyebrow" style={{ marginBottom: "20px" }}>Proof of Work</p>
           <div className="hp-stat-grid">
             <div className="hp-stat-card">
               <p className="hp-stat-num">25%</p>
@@ -95,21 +95,31 @@ export default function Home() {
         {/* 3 — Who I work with */}
         <section className="section">
           <p className="eyebrow">Who I work with</p>
-          <ul className="bullets">
-            <li>Founders who know something isn&apos;t working but can&apos;t pinpoint what</li>
-            <li>Scaling teams where growth has stalled and no one agrees why</li>
-            <li>Operators who need someone to own a function end-to-end, not just advise on it</li>
-          </ul>
+          <div className="hp-who-grid">
+            <div className="hp-who-card">
+              <span className="hp-who-bg-num">01</span>
+              <p className="hp-who-label">Something&apos;s off</p>
+              <p className="hp-who-desc">You know the metrics aren&apos;t moving. You don&apos;t know exactly why.</p>
+            </div>
+            <div className="hp-who-card">
+              <span className="hp-who-bg-num">02</span>
+              <p className="hp-who-label">Growth has stalled</p>
+              <p className="hp-who-desc">The team is working hard. The numbers aren&apos;t moving. Nobody agrees on why.</p>
+            </div>
+            <div className="hp-who-card">
+              <span className="hp-who-bg-num">03</span>
+              <p className="hp-who-label">You need an owner</p>
+              <p className="hp-who-desc">Not another advisor. Someone embedded, accountable, end-to-end.</p>
+            </div>
+          </div>
         </section>
 
         {/* 4 — Domains */}
         <section className="section">
           <p className="eyebrow">Domains</p>
-          <div className="hp-chips">
-            {DOMAIN_CHIPS.map((chip) => (
-              <span key={chip} className="hp-chip">{chip}</span>
-            ))}
-          </div>
+          <p className="hp-domains-text">
+            Marketplaces · B2B SaaS · AI products · Fintech &amp; BNPL · MENA &amp; KSA · Product strategy · Growth &amp; retention · Multi-agent systems
+          </p>
         </section>
 
         {/* 5 — Built & Shipped mini */}
@@ -226,52 +236,13 @@ export default function Home() {
               </a>
             </div>
 
-            {/* Option 3 */}
-            <div className="card">
-              <p className="card-label">Option 3</p>
-              <h3 className="card-name">Let&apos;s Just Talk</h3>
-              <p className="card-price">One call · no commitment</p>
-              <p className="card-sub">
-                Stuck on strategy? Growth not moving? Need a second brain on a
-                decision? Book a call and let&apos;s figure out what&apos;s
-                actually going on.
-              </p>
-              <a
-                href={BOOKING_HREF}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="card-btn"
-              >
-                Book a free call →
-              </a>
-            </div>
-
-            {/* Option 4 */}
-            <div className="card">
-              <p className="card-label">Option 4</p>
-              <h3 className="card-name">Mentorship</h3>
-              <p className="card-price">Ongoing · flexible</p>
-              <p className="card-sub">
-                Junior PM breaking into AI products? Founder figuring out how to
-                build with agents? Just curious about where this is all going?
-                Book a session. No agenda required.
-              </p>
-              <a
-                href={BOOKING_HREF}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="card-btn"
-              >
-                Book a session →
-              </a>
-            </div>
           </div>
         </section>
 
         {/* 7 — Closing: steps + CTA */}
-        <section className="section">
-          <h2 className="section-title">Let&apos;s figure out what&apos;s broken.</h2>
-          <div className="hp-steps-grid">
+        <section className="section hp-closing-section">
+          <h2 className="hp-closing-headline">Let&apos;s figure out what&apos;s broken.</h2>
+          <div className="hp-steps-list">
             <div className="hp-step">
               <p className="hp-step-num">01</p>
               <p className="hp-step-text">Book a free 30-min call</p>
@@ -292,8 +263,7 @@ export default function Home() {
           <div className="hp-closing-cta">
             <Cta />
             <p className="note">
-              No pitch. No fluff. Just an honest conversation about your
-              business.
+              No pitch. If I can&apos;t help, I&apos;ll tell you.
             </p>
           </div>
         </section>
