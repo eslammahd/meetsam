@@ -7,13 +7,13 @@ import { useState } from "react";
 function SearchIllo() {
   return (
     <svg width="80" height="72" viewBox="0 0 80 72" fill="none" aria-hidden="true">
-      <rect x="6" y="10" width="38" height="6" rx="3" fill="#FAECE7" />
-      <rect x="6" y="22" width="30" height="6" rx="3" fill="#F5D0C5" />
-      <rect x="6" y="34" width="34" height="6" rx="3" fill="#FAECE7" />
-      <circle cx="54" cy="46" r="15" stroke="#D85A30" strokeWidth="2.5" fill="none" />
-      <circle cx="54" cy="46" r="7" fill="#FAECE7" />
-      <line x1="64.5" y1="57" x2="74" y2="66" stroke="#D85A30" strokeWidth="2.5" strokeLinecap="round" />
-      <path d="M54 41v10M49 46h10" stroke="#D85A30" strokeWidth="1.8" strokeLinecap="round" />
+      <rect x="6" y="10" width="38" height="6" rx="3" fill="rgba(255,255,255,0.15)" />
+      <rect x="6" y="22" width="30" height="6" rx="3" fill="rgba(255,255,255,0.08)" />
+      <rect x="6" y="34" width="34" height="6" rx="3" fill="rgba(255,255,255,0.15)" />
+      <circle cx="54" cy="46" r="15" stroke="#ffffff" strokeWidth="2.5" fill="none" />
+      <circle cx="54" cy="46" r="7" fill="rgba(255,255,255,0.15)" />
+      <line x1="64.5" y1="57" x2="74" y2="66" stroke="#ffffff" strokeWidth="2.5" strokeLinecap="round" />
+      <path d="M54 41v10M49 46h10" stroke="#ffffff" strokeWidth="1.8" strokeLinecap="round" />
     </svg>
   );
 }
@@ -27,15 +27,15 @@ function DonutIllo() {
   const gap = circ * 0.75;
   return (
     <svg width="80" height="72" viewBox="0 0 80 72" fill="none" aria-hidden="true">
-      <circle cx={cx} cy={cy} r={r} stroke="#FAECE7" strokeWidth="9" fill="none" />
+      <circle cx={cx} cy={cy} r={r} stroke="rgba(255,255,255,0.15)" strokeWidth="9" fill="none" />
       <circle
         cx={cx} cy={cy} r={r}
-        stroke="#D85A30" strokeWidth="9" fill="none"
+        stroke="#ffffff" strokeWidth="9" fill="none"
         strokeDasharray={`${filled} ${gap}`}
         strokeLinecap="round"
         transform={`rotate(-90 ${cx} ${cy})`}
       />
-      <text x={cx} y={cy + 4} textAnchor="middle" fill="#D85A30" fontSize="11" fontWeight="600" fontFamily="Outfit, system-ui, sans-serif">25%</text>
+      <text x={cx} y={cy + 4} textAnchor="middle" fill="#ffffff" fontSize="11" fontWeight="600" fontFamily="Outfit, system-ui, sans-serif">25%</text>
     </svg>
   );
 }
@@ -43,11 +43,11 @@ function DonutIllo() {
 function BarIllo() {
   return (
     <svg width="80" height="72" viewBox="0 0 80 72" fill="none" aria-hidden="true">
-      <rect x="10" y="46" width="12" height="16" rx="3" fill="#FAECE7" />
-      <rect x="28" y="32" width="12" height="30" rx="3" fill="#F0997B" />
-      <rect x="46" y="18" width="12" height="44" rx="3" fill="#D85A30" />
-      <path d="M16 44 L34 30 L52 14" stroke="#D85A30" strokeWidth="1.5" strokeLinecap="round" strokeDasharray="4 2.5" />
-      <path d="M48 10 L52 14 L56 10" stroke="#D85A30" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+      <rect x="10" y="46" width="12" height="16" rx="3" fill="rgba(255,255,255,0.15)" />
+      <rect x="28" y="32" width="12" height="30" rx="3" fill="rgba(255,255,255,0.25)" />
+      <rect x="46" y="18" width="12" height="44" rx="3" fill="#ffffff" />
+      <path d="M16 44 L34 30 L52 14" stroke="#ffffff" strokeWidth="1.5" strokeLinecap="round" strokeDasharray="4 2.5" />
+      <path d="M48 10 L52 14 L56 10" stroke="#ffffff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none" />
     </svg>
   );
 }
@@ -57,12 +57,12 @@ function BarIllo() {
 function RobotIcon() {
   return (
     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-      <rect x="3" y="6" width="10" height="7" rx="2" fill="#D85A30" />
-      <rect x="5.5" y="3" width="5" height="4" rx="1" fill="#D85A30" />
-      <rect x="7" y="1.5" width="2" height="2" rx="0.5" fill="#D85A30" />
-      <rect x="4.5" y="9" width="2" height="2" rx="0.5" fill="#FAECE7" />
-      <rect x="9.5" y="9" width="2" height="2" rx="0.5" fill="#FAECE7" />
-      <rect x="6" y="11" width="4" height="1.5" rx="0.5" fill="#FAECE7" />
+      <rect x="3" y="6" width="10" height="7" rx="2" fill="#ffffff" />
+      <rect x="5.5" y="3" width="5" height="4" rx="1" fill="#ffffff" />
+      <rect x="7" y="1.5" width="2" height="2" rx="0.5" fill="#ffffff" />
+      <rect x="4.5" y="9" width="2" height="2" rx="0.5" fill="rgba(255,255,255,0.15)" />
+      <rect x="9.5" y="9" width="2" height="2" rx="0.5" fill="rgba(255,255,255,0.15)" />
+      <rect x="6" y="11" width="4" height="1.5" rx="0.5" fill="rgba(255,255,255,0.15)" />
     </svg>
   );
 }
@@ -96,15 +96,15 @@ function ChatScene() {
       <div style={{ display: "flex", alignItems: "flex-start", gap: "8px" }}>
         <div style={{
           width: "28px", height: "28px", borderRadius: "50%",
-          background: "#FAECE7", flexShrink: 0,
+          background: "rgba(255,255,255,0.15)", flexShrink: 0,
           display: "flex", alignItems: "center", justifyContent: "center",
         }}>
           <RobotIcon />
         </div>
         <div>
           <div style={{
-            background: "#FFF5F2",
-            border: "0.5px solid #F0997B",
+            background: "var(--bg)",
+            border: "0.5px solid var(--border)",
             borderRadius: "14px 14px 14px 4px",
             padding: "8px 12px",
             fontSize: "13px",
@@ -112,7 +112,7 @@ function ChatScene() {
             color: "#1a1a1a",
           }}>
             Take care — you have{" "}
-            <span style={{ color: "#D85A30", fontWeight: 500 }}>1:30 mins</span>{" "}
+            <span style={{ color: "#ffffff", fontWeight: 500 }}>1:30 mins</span>{" "}
             to save this order.
           </div>
           <p style={{ fontSize: "11px", color: "var(--text-muted)", marginTop: "4px", paddingLeft: "4px" }}>
