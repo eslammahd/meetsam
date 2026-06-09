@@ -152,8 +152,8 @@ export default function Home() {
               </div>
               <div className="shipped-bottom">
                 <div className="shipped-card-footer">
-                  <p className="shipped-url" style={{ color: "rgba(99,102,241,0.6)" }}>orchpad.com</p>
-                  <span className="shipped-arrow" style={{ color: "rgba(99,102,241,0.6)" }}>↗</span>
+                  <p className="shipped-url" style={{ color: "rgba(255,255,255,0.5)" }}>orchpad.com</p>
+                  <span className="shipped-arrow" style={{ color: "rgba(255,255,255,0.5)" }}>↗</span>
                 </div>
               </div>
             </a>
@@ -178,7 +178,7 @@ export default function Home() {
               </div>
               <div className="shipped-bottom">
                 <div className="shipped-card-footer">
-                  <p className="shipped-url" style={{ color: "#9ca3af" }}>skim.getorvo.co</p>
+                  <p className="shipped-url" style={{ color: "rgba(255,255,255,0.5)" }}>skim.getorvo.co</p>
                   <span className="shipped-arrow" style={{ color: "#9ca3af" }}>↗</span>
                 </div>
               </div>
@@ -204,7 +204,7 @@ export default function Home() {
               </div>
               <div className="shipped-bottom">
                 <div className="shipped-card-footer">
-                  <p className="shipped-url" style={{ color: "#5eead4" }}>mentor.getorvo.co</p>
+                  <p className="shipped-url" style={{ color: "rgba(255,255,255,0.5)" }}>mentor.getorvo.co</p>
                   <span className="shipped-arrow" style={{ color: "#5eead4" }}>↗</span>
                 </div>
               </div>
