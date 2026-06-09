@@ -93,19 +93,33 @@ export default function Home() {
         {/* 3 — Who I work with */}
         <section className="section">
           <p className="eyebrow">Who I work with</p>
-          <ul className="bullets">
-            <li>
-              Founders who know something isn&apos;t working but can&apos;t
-              pinpoint what
-            </li>
-            <li>
-              Scaling teams where growth has stalled and no one agrees why
-            </li>
-            <li>
-              Operators who need someone to own a function end-to-end, not just
-              advise on it
-            </li>
-          </ul>
+          <div className="hp-who-grid">
+            <div className="hp-who-card">
+              <svg className="hp-who-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D85A30" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M12 8v4" />
+                <path d="M12 16v.01" />
+              </svg>
+              <p className="hp-who-title">Something isn&apos;t working</p>
+              <p className="hp-who-desc">You know the metrics are off but can&apos;t pinpoint the real cause.</p>
+            </div>
+            <div className="hp-who-card">
+              <svg className="hp-who-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D85A30" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M3 17l4-4 4 4 4-6 4 2" />
+                <path d="M20 9l-1-4-4 1" />
+              </svg>
+              <p className="hp-who-title">Growth has stalled</p>
+              <p className="hp-who-desc">Scaling teams where momentum has slowed and no one agrees why.</p>
+            </div>
+            <div className="hp-who-card">
+              <svg className="hp-who-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D85A30" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="3" />
+                <path d="M12 2v2M12 20v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M2 12h2M20 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+              </svg>
+              <p className="hp-who-title">Need someone to own it</p>
+              <p className="hp-who-desc">Not just advice — someone embedded, accountable, end-to-end.</p>
+            </div>
+          </div>
         </section>
 
         {/* 4 — Domains */}
@@ -272,67 +286,28 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 7 — What I'm doing now */}
-        <section className="section">
-          <p className="eyebrow">Now</p>
-          <p className="hp-now">
-            Currently taking on 1–2 fractional operator contracts — available
-            for product sprints, embedded work, or just a diagnostic call.
-            Alongside that, building Orchpad and Skim under Orvo AI. Based in
-            Cairo, working async with teams in MENA, Europe, and the Gulf.
-          </p>
-        </section>
-
-        {/* 8 — Proof */}
-        <section className="section">
-          <p className="eyebrow">Proof</p>
-          <ul className="proof">
-            <li>
-              Diagnosed a broken activation funnel and rebuilt the onboarding
-              system — improving customer activation by 15% at an enterprise
-              SaaS platform serving MENA
-            </li>
-            <li>
-              Built an AI cancellation risk model that cut order cancellations
-              25% in one quarter
-            </li>
-            <li>
-              Took Orchpad from zero to live product in under 4 weeks using AI
-              agent workflows
-            </li>
-          </ul>
-        </section>
-
-        {/* 9 — How it works */}
-        <section className="section">
-          <p className="eyebrow">How it works</p>
-          <ol className="steps">
-            <li>
-              <span className="num">01</span>
-              <span>Book a free 30-min call</span>
-            </li>
-            <li>
-              <span className="num">02</span>
-              <span>
-                I diagnose your problem honestly — if I can&apos;t help, I&apos;ll
-                tell you
-              </span>
-            </li>
-            <li>
-              <span className="num">03</span>
-              <span>We agree on scope and price</span>
-            </li>
-            <li>
-              <span className="num">04</span>
-              <span>I build, you ship</span>
-            </li>
-          </ol>
-        </section>
-
-        {/* 10 — Final CTA */}
+        {/* 7 — Closing: steps + CTA */}
         <section className="section">
           <h2 className="section-title">Let&apos;s figure out what&apos;s broken.</h2>
-          <div style={{ marginTop: "24px" }}>
+          <div className="hp-steps-grid">
+            <div className="hp-step">
+              <p className="hp-step-num">01</p>
+              <p className="hp-step-text">Book a free 30-min call</p>
+            </div>
+            <div className="hp-step">
+              <p className="hp-step-num">02</p>
+              <p className="hp-step-text">I diagnose your problem — if I can&apos;t help, I&apos;ll tell you</p>
+            </div>
+            <div className="hp-step">
+              <p className="hp-step-num">03</p>
+              <p className="hp-step-text">We agree on scope and price</p>
+            </div>
+            <div className="hp-step">
+              <p className="hp-step-num">04</p>
+              <p className="hp-step-text">I build, you ship</p>
+            </div>
+          </div>
+          <div className="hp-closing-cta">
             <Cta />
             <p className="note">
               No pitch. No fluff. Just an honest conversation about your
