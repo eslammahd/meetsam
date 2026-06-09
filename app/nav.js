@@ -10,7 +10,12 @@ export default function Nav() {
           <span className="wm-dot">.</span>
         </span>
       </a>
-      <ThemeToggle />
+      <div className="nav-right">
+        <a href="/work" className="nav-link">
+          Work
+        </a>
+        <ThemeToggle />
+      </div>
     </nav>
   );
 }

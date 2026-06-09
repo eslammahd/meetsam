@@ -282,6 +282,134 @@ section.section {
   color: var(--text);
 }
 
+/* ---------- Work page ---------- */
+.work-intro {
+  border-top: none;
+}
+
+.work-positioning {
+  font-family: "Outfit", system-ui, sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--text);
+  max-width: 720px;
+}
+
+/* Case studies */
+.cs-list {
+  margin-top: 36px;
+}
+
+.cs-item {
+  padding: 40px 0;
+}
+
+.cs-divider {
+  border-bottom: 0.5px solid var(--border);
+}
+
+.cs-item:first-child {
+  padding-top: 0;
+}
+
+.cs-company {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.cs-title {
+  font-family: "Outfit", system-ui, sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-top: 10px;
+}
+
+.cs-result {
+  font-size: 14px;
+  font-weight: 500;
+  color: #d85a30;
+  margin-top: 8px;
+}
+
+.cs-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 28px;
+}
+
+.cs-row {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 640px) {
+  .cs-row {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+}
+
+.cs-label {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  padding-top: 2px;
+}
+
+.cs-content {
+  font-family: system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--text);
+}
+
+/* Domain depth */
+.work-depth {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 28px;
+  max-width: 640px;
+}
+
+.work-depth p {
+  font-family: system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--text-muted);
+}
+
+/* CTA links */
+.work-cta-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  margin-top: 28px;
+}
+
+.work-text-link {
+  font-family: "Outfit", system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.work-text-link:hover {
+  color: var(--text);
+}
+
 /* ---------- Services page ---------- */
 .svc-hero {
   padding: 40px 24px 48px;
