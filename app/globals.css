@@ -980,3 +980,174 @@ footer .link {
 footer .link:hover {
   color: var(--accent);
 }
+
+/* ── Homepage new sections ─────────────────────────────────────── */
+
+/* Quick Proof stats */
+.hp-stat-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 640px) {
+  .hp-stat-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.hp-stat-card {
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px 24px;
+}
+
+.hp-stat-num {
+  font-family: "Outfit", system-ui, sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  color: #D85A30;
+  margin: 0 0 4px;
+  line-height: 1;
+}
+
+.hp-stat-label {
+  font-size: 13px;
+  color: var(--text);
+  margin: 0 0 4px;
+  font-weight: 500;
+}
+
+.hp-stat-sub {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* Domain chips */
+.hp-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 28px;
+}
+
+.hp-chip {
+  font-size: 13px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  background: var(--bg-raised);
+  color: var(--text-muted);
+}
+
+/* Built & Shipped mini */
+.hp-shipped-sub {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin: 0 0 24px;
+}
+
+.hp-shipped-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 640px) {
+  .hp-shipped-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.hp-mini-card {
+  display: block;
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px 20px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: border-color 0.15s;
+}
+
+.hp-mini-card:hover {
+  border-color: var(--accent);
+}
+
+.hp-mini-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.hp-mini-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.hp-mini-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+}
+
+.hp-mini-badge {
+  font-size: 10px;
+  color: var(--text-muted);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 2px 8px;
+  margin-left: auto;
+}
+
+.hp-mini-name {
+  font-family: "Outfit", system-ui, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--text);
+  margin: 0 0 4px;
+}
+
+.hp-mini-tagline {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin: 0 0 8px;
+}
+
+.hp-mini-url {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.hp-shipped-more {
+  margin-top: 16px;
+  text-align: right;
+}
+
+.hp-more-link {
+  font-size: 13px;
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.hp-more-link:hover {
+  color: var(--accent);
+}
+
+/* Now */
+.hp-now {
+  font-size: 16px;
+  color: var(--text);
+  line-height: 1.7;
+  max-width: 640px;
+  margin: 0;
+}

@@ -27,13 +27,24 @@ function Cta() {
   );
 }
 
+const DOMAIN_CHIPS = [
+  "Two-sided marketplaces",
+  "B2B SaaS",
+  "AI products",
+  "Fintech & BNPL",
+  "MENA & KSA markets",
+  "Product strategy",
+  "Growth & retention",
+  "Multi-agent systems",
+];
+
 export default function Home() {
   return (
     <>
       <Nav />
 
       <main>
-        {/* Hero */}
+        {/* 1 — Hero */}
         <section className="hero">
           <p className="eyebrow">Meet Sam</p>
           <h1 className="h1">
@@ -58,7 +69,28 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Who I work with */}
+        {/* 2 — Quick Proof */}
+        <section className="section hp-stat-section">
+          <div className="hp-stat-grid">
+            <div className="hp-stat-card">
+              <p className="hp-stat-num">25%</p>
+              <p className="hp-stat-label">fewer cancellations</p>
+              <p className="hp-stat-sub">AI risk model · KSA marketplace</p>
+            </div>
+            <div className="hp-stat-card">
+              <p className="hp-stat-num">40%</p>
+              <p className="hp-stat-label">BNPL activation increase</p>
+              <p className="hp-stat-sub">Credit scorecards · B2B Egypt</p>
+            </div>
+            <div className="hp-stat-card">
+              <p className="hp-stat-num">4 weeks</p>
+              <p className="hp-stat-label">zero to live product</p>
+              <p className="hp-stat-sub">Orchpad · AI agent workflows</p>
+            </div>
+          </div>
+        </section>
+
+        {/* 3 — Who I work with */}
         <section className="section">
           <p className="eyebrow">Who I work with</p>
           <ul className="bullets">
@@ -76,7 +108,77 @@ export default function Home() {
           </ul>
         </section>
 
-        {/* Work with Sam */}
+        {/* 4 — Domains */}
+        <section className="section">
+          <p className="eyebrow">Domains</p>
+          <div className="hp-chips">
+            {DOMAIN_CHIPS.map((chip) => (
+              <span key={chip} className="hp-chip">{chip}</span>
+            ))}
+          </div>
+        </section>
+
+        {/* 5 — Built & Shipped mini */}
+        <section className="section">
+          <p className="eyebrow">Built &amp; Shipped</p>
+          <p className="hp-shipped-sub">
+            Live products built under Orvo AI.
+          </p>
+          <div className="hp-shipped-grid">
+            <a
+              href="https://orchpad.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hp-mini-card"
+            >
+              <div className="hp-mini-top">
+                <span className="hp-mini-dot" style={{ background: "#6366f1" }} />
+                <span className="hp-mini-label" style={{ color: "#6366f1" }}>Build</span>
+                <span className="hp-mini-badge">Invite only</span>
+              </div>
+              <p className="hp-mini-name">Orchpad</p>
+              <p className="hp-mini-tagline">AI-native product workspace</p>
+              <p className="hp-mini-url">orchpad.com</p>
+            </a>
+
+            <a
+              href="https://skim.getorvo.co"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hp-mini-card"
+            >
+              <div className="hp-mini-top">
+                <span className="hp-mini-dot" style={{ background: "#3B6D11" }} />
+                <span className="hp-mini-label" style={{ color: "#3B6D11" }}>Learn</span>
+              </div>
+              <p className="hp-mini-name">skim.</p>
+              <p className="hp-mini-tagline">Read less, know more.</p>
+              <p className="hp-mini-url">skim.getorvo.co</p>
+            </a>
+
+            <a
+              href="https://mentor.getorvo.co"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hp-mini-card"
+            >
+              <div className="hp-mini-top">
+                <span className="hp-mini-dot" style={{ background: "#0F6E56" }} />
+                <span className="hp-mini-label" style={{ color: "#0F6E56" }}>Career</span>
+              </div>
+              <p className="hp-mini-name">Mentor</p>
+              <p className="hp-mini-tagline">You&apos;re worth more than you think.</p>
+              <p className="hp-mini-url">mentor.getorvo.co</p>
+            </a>
+          </div>
+          <div className="hp-shipped-more">
+            <a href="/work" className="hp-more-link">
+              See full work &amp; case studies →
+            </a>
+          </div>
+        </section>
+
+        {/* 6 — Work with Sam */}
         <section className="section">
           <p className="eyebrow">Work with Sam</p>
           <div className="cards">
@@ -170,7 +272,18 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Proof */}
+        {/* 7 — What I'm doing now */}
+        <section className="section">
+          <p className="eyebrow">Now</p>
+          <p className="hp-now">
+            Currently taking on 1–2 fractional operator contracts — available
+            for product sprints, embedded work, or just a diagnostic call.
+            Alongside that, building Orchpad and Skim under Orvo AI. Based in
+            Cairo, working async with teams in MENA, Europe, and the Gulf.
+          </p>
+        </section>
+
+        {/* 8 — Proof */}
         <section className="section">
           <p className="eyebrow">Proof</p>
           <ul className="proof">
@@ -190,7 +303,7 @@ export default function Home() {
           </ul>
         </section>
 
-        {/* How it works */}
+        {/* 9 — How it works */}
         <section className="section">
           <p className="eyebrow">How it works</p>
           <ol className="steps">
@@ -216,7 +329,7 @@ export default function Home() {
           </ol>
         </section>
 
-        {/* Final CTA */}
+        {/* 10 — Final CTA */}
         <section className="section">
           <h2 className="section-title">Let&apos;s figure out what&apos;s broken.</h2>
           <div style={{ marginTop: "24px" }}>
