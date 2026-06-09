@@ -172,6 +172,26 @@ export default function Work() {
               Book a call →
             </a>
             <a
+              href="mailto:eslam@getorvo.co?subject=CV%20Request&body=Hi%20Sam%2C%0A%0AI%27d%20love%20to%20receive%20your%20CV.%20Here%27s%20a%20bit%20about%20the%20opportunity%3A%0A%0A"
+              className="btn-outline"
+            >
+              Request CV →
+            </a>
+          </div>
+          <p className="work-cta-sub">
+            Or{" "}
+            <a
+              href={BOOKING_HREF}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="work-cta-inline-link"
+            >
+              book a 15-min intro call
+            </a>
+            {" "}to get it directly →
+          </p>
+          <div className="work-cta-links" style={{ marginTop: "20px" }}>
+            <a
               href={LINKEDIN_HREF}
               target="_blank"
               rel="noopener noreferrer"
@@ -179,8 +199,8 @@ export default function Work() {
             >
               LinkedIn →
             </a>
-            <a href="mailto:eslam@orchpad.com" className="work-text-link">
-              eslam@orchpad.com
+            <a href="mailto:eslam@getorvo.co" className="work-text-link">
+              eslam@getorvo.co
             </a>
           </div>
         </section>
