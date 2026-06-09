@@ -300,7 +300,6 @@ export default function Home() {
       <footer>
         <div className="footer-links">
           <span>Meet Sam</span>
-          <ExternalLink href="https://www.orchpad.com">Orchpad</ExternalLink>
           <ExternalLink href="https://landing.orchpad.getorvo.co/blog">
             Blog
           </ExternalLink>

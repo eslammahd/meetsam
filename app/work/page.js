@@ -210,14 +210,6 @@ export default function Work() {
         <div className="footer-links">
           <span>Meet Sam</span>
           <a
-            href="https://www.orchpad.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="link"
-          >
-            Orchpad
-          </a>
-          <a
             href="https://landing.orchpad.getorvo.co/blog"
             target="_blank"
             rel="noopener noreferrer"
