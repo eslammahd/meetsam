@@ -1003,6 +1003,7 @@ footer .link:hover {
   border-radius: 0;
   padding: 20px 24px;
   transition: background 0.2s;
+  align-self: start;
 }
 
 .hp-stat-card:hover {
