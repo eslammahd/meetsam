@@ -52,7 +52,7 @@ export default function Home() {
             <h1 className="h1">
               Your product works.<br />
               Your numbers don&apos;t.<br />
-              Let&apos;s figure out why.
+              <span className="h1-coda">Let&apos;s figure out why.</span>
             </h1>
             <p className="lead">
               I&apos;m Sam. I embed in your team, diagnose the real problem —
