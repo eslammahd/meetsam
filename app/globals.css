@@ -414,11 +414,13 @@ section.section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  aspect-ratio: 4 / 3;
+  min-height: 200px;
   border-radius: 14px;
   border: 0.5px solid var(--border);
   padding: 20px;
   text-decoration: none;
+  position: relative;
+  overflow: hidden;
   transition: opacity 0.15s ease;
 }
 
