@@ -1069,11 +1069,28 @@ footer .link:hover {
   padding: 16px 20px;
   cursor: pointer;
   text-decoration: none;
-  transition: border-color 0.15s;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.15s;
 }
 
 .hp-mini-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   border-color: var(--accent);
+}
+
+.hp-mini-card--dark {
+  background: #0F1117;
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.hp-mini-card--cream {
+  background: #F7F6F1;
+  border-color: rgba(0, 0, 0, 0.06);
+}
+
+.hp-mini-card--teal {
+  background: #0D9488;
+  border-color: rgba(255, 255, 255, 0.12);
 }
 
 .hp-mini-top {
@@ -1089,6 +1106,25 @@ footer .link:hover {
   height: 8px;
   border-radius: 50%;
   flex-shrink: 0;
+}
+
+@keyframes hp-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.4); }
+}
+
+.hp-mini-pulse {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  animation: hp-pulse 2s ease-in-out infinite;
+}
+
+.hp-mini-live {
+  font-size: 11px;
+  margin: 0;
 }
 
 .hp-mini-label {

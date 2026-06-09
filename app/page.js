@@ -48,7 +48,7 @@ export default function Home() {
         <section className="hero">
           <p className="eyebrow">Meet Sam</p>
           <h1 className="h1">
-            I find what&apos;s broken in your business and fix it.
+            I find what&apos;s broken. Then I fix it.
           </h1>
           <p className="lead">
             I&apos;m Sam. I embed in your team as a fractional operator —
@@ -93,33 +93,11 @@ export default function Home() {
         {/* 3 — Who I work with */}
         <section className="section">
           <p className="eyebrow">Who I work with</p>
-          <div className="hp-who-grid">
-            <div className="hp-who-card">
-              <svg className="hp-who-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D85A30" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                <circle cx="12" cy="12" r="9" />
-                <path d="M12 8v4" />
-                <path d="M12 16v.01" />
-              </svg>
-              <p className="hp-who-title">Something isn&apos;t working</p>
-              <p className="hp-who-desc">You know the metrics are off but can&apos;t pinpoint the real cause.</p>
-            </div>
-            <div className="hp-who-card">
-              <svg className="hp-who-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D85A30" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                <path d="M3 17l4-4 4 4 4-6 4 2" />
-                <path d="M20 9l-1-4-4 1" />
-              </svg>
-              <p className="hp-who-title">Growth has stalled</p>
-              <p className="hp-who-desc">Scaling teams where momentum has slowed and no one agrees why.</p>
-            </div>
-            <div className="hp-who-card">
-              <svg className="hp-who-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D85A30" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                <circle cx="12" cy="12" r="3" />
-                <path d="M12 2v2M12 20v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M2 12h2M20 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
-              </svg>
-              <p className="hp-who-title">Need someone to own it</p>
-              <p className="hp-who-desc">Not just advice — someone embedded, accountable, end-to-end.</p>
-            </div>
-          </div>
+          <ul className="bullets">
+            <li>Founders who know something isn&apos;t working but can&apos;t pinpoint what</li>
+            <li>Scaling teams where growth has stalled and no one agrees why</li>
+            <li>Operators who need someone to own a function end-to-end, not just advise on it</li>
+          </ul>
         </section>
 
         {/* 4 — Domains */}
@@ -139,50 +117,52 @@ export default function Home() {
             Live products built under Orvo AI.
           </p>
           <div className="hp-shipped-grid">
+            {/* Orchpad — dark */}
             <a
               href="https://orchpad.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="hp-mini-card"
+              className="hp-mini-card hp-mini-card--dark"
             >
               <div className="hp-mini-top">
-                <span className="hp-mini-dot" style={{ background: "#6366f1" }} />
-                <span className="hp-mini-label" style={{ color: "#6366f1" }}>Build</span>
-                <span className="hp-mini-badge">Invite only</span>
+                <span className="hp-mini-pulse" style={{ background: "#6366f1" }} />
+                <span className="hp-mini-label" style={{ color: "#a5b4fc" }}>Build</span>
               </div>
-              <p className="hp-mini-name">Orchpad</p>
-              <p className="hp-mini-tagline">AI-native product workspace</p>
-              <p className="hp-mini-url">orchpad.com</p>
+              <p className="hp-mini-name" style={{ color: "#f1f5f9" }}>Orchpad</p>
+              <p className="hp-mini-tagline" style={{ color: "#94a3b8" }}>AI-native product workspace</p>
+              <p className="hp-mini-live" style={{ color: "#64748b" }}>Live · invite only</p>
             </a>
 
+            {/* skim. — cream */}
             <a
               href="https://skim.getorvo.co"
               target="_blank"
               rel="noopener noreferrer"
-              className="hp-mini-card"
+              className="hp-mini-card hp-mini-card--cream"
             >
               <div className="hp-mini-top">
-                <span className="hp-mini-dot" style={{ background: "#3B6D11" }} />
+                <span className="hp-mini-pulse" style={{ background: "#3B6D11" }} />
                 <span className="hp-mini-label" style={{ color: "#3B6D11" }}>Learn</span>
               </div>
-              <p className="hp-mini-name">skim.</p>
-              <p className="hp-mini-tagline">Read less, know more.</p>
-              <p className="hp-mini-url">skim.getorvo.co</p>
+              <p className="hp-mini-name" style={{ color: "#1a1a1a" }}>skim.</p>
+              <p className="hp-mini-tagline" style={{ color: "#6b7280" }}>Read less, know more.</p>
+              <p className="hp-mini-url" style={{ color: "#9ca3af" }}>skim.getorvo.co</p>
             </a>
 
+            {/* Mentor — teal */}
             <a
               href="https://mentor.getorvo.co"
               target="_blank"
               rel="noopener noreferrer"
-              className="hp-mini-card"
+              className="hp-mini-card hp-mini-card--teal"
             >
               <div className="hp-mini-top">
-                <span className="hp-mini-dot" style={{ background: "#0F6E56" }} />
-                <span className="hp-mini-label" style={{ color: "#0F6E56" }}>Career</span>
+                <span className="hp-mini-pulse" style={{ background: "#99f6e4" }} />
+                <span className="hp-mini-label" style={{ color: "#ccfbf1" }}>Career</span>
               </div>
-              <p className="hp-mini-name">Mentor</p>
-              <p className="hp-mini-tagline">You&apos;re worth more than you think.</p>
-              <p className="hp-mini-url">mentor.getorvo.co</p>
+              <p className="hp-mini-name" style={{ color: "#f0fdfa" }}>Mentor</p>
+              <p className="hp-mini-tagline" style={{ color: "#99f6e4" }}>You&apos;re worth more than you think.</p>
+              <p className="hp-mini-url" style={{ color: "#5eead4" }}>mentor.getorvo.co</p>
             </a>
           </div>
           <div className="hp-shipped-more">
