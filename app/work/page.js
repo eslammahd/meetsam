@@ -11,10 +11,6 @@ function ExternalLink({ href, children }) {
   );
 }
 
-const Orchpad = () => (
-  <ExternalLink href="https://www.orchpad.com">Orchpad</ExternalLink>
-);
-
 export const metadata = {
   title: "Work — meetsam.me",
   description:
@@ -61,57 +57,24 @@ const cases = [
     outcome:
       "40% increase in BNPL activation. 35% profit growth and 25% retention improvement across the demand vertical. 80% reduction in manual sales reporting via a Sales Management System built in parallel.",
   },
-  {
-    company: "ORVO AI · 2024–PRESENT",
-    title: "Orchpad — zero to live product in 4 weeks",
-    result:
-      "Live product shipped in 3–4 weeks · 50+ issues in a single build session",
-    situation:
-      "Non-technical founders building products had no workspace that matched how they actually think — stitching together Notion docs, ChatGPT threads, and task lists with no structure connecting strategy to execution.",
-    diagnosis:
-      "The problem wasn't a lack of AI tools. Existing tools either gave raw generation with no structure, or rigid PM frameworks with no intelligence. Founders needed a system that could hold product thinking — not just produce output on demand.",
-    built: null, // rendered separately with Orchpad link
-    outcome:
-      "Shipped from zero to live invite-only beta in 3–4 weeks. 50+ scoped issues shipped in a single build session. Operating at roughly 15x speed compression versus traditional development.",
-  },
 ];
 
-function CaseStudy({ cs, isLast }) {
+function FoxSvg() {
   return (
-    <div className={isLast ? "cs-item" : "cs-item cs-divider"}>
-      <p className="cs-company">{cs.company}</p>
-      <h2 className="cs-title">{cs.title}</h2>
-      <p className="cs-result">{cs.result}</p>
-
-      <div className="cs-rows">
-        <div className="cs-row">
-          <p className="cs-label">Situation</p>
-          <p className="cs-content">{cs.situation}</p>
-        </div>
-        <div className="cs-row">
-          <p className="cs-label">Diagnosis</p>
-          <p className="cs-content">{cs.diagnosis}</p>
-        </div>
-        <div className="cs-row">
-          <p className="cs-label">What I built</p>
-          {cs.built ? (
-            <p className="cs-content">{cs.built}</p>
-          ) : (
-            <p className="cs-content">
-              <Orchpad /> — an AI-native product workspace. Designed the full
-              product experience from scratch and orchestrated the entire build
-              through a Director → Builder → RO multi-agent workflow using
-              Claude, Supabase, Vercel, GitHub, and Linear. No manual code
-              written.
-            </p>
-          )}
-        </div>
-        <div className="cs-row">
-          <p className="cs-label">Outcome</p>
-          <p className="cs-content">{cs.outcome}</p>
-        </div>
-      </div>
-    </div>
+    <svg width="40" height="36" viewBox="0 0 60 52" fill="none" aria-hidden="true">
+      <ellipse cx="30" cy="34" rx="22" ry="16" fill="#1A1A1A" />
+      <polygon points="14,22 10,8 20,18" fill="#1A1A1A" />
+      <polygon points="46,22 50,8 40,18" fill="#1A1A1A" />
+      <polygon points="15,21 11,10 19,18" fill="#8FBA24" />
+      <polygon points="45,21 49,10 41,18" fill="#8FBA24" />
+      <rect x="14" y="26" width="14" height="9" rx="3" fill="#F7F6F1" />
+      <rect x="32" y="26" width="14" height="9" rx="3" fill="#F7F6F1" />
+      <rect x="26" y="29" width="8" height="3" rx="1" fill="#F7F6F1" />
+      <circle cx="21" cy="30" r="3.5" fill="#8FBA24" />
+      <circle cx="39" cy="30" r="3.5" fill="#8FBA24" />
+      <circle cx="21" cy="30" r="1.2" fill="#1A1A1A" />
+      <circle cx="39" cy="30" r="1.2" fill="#1A1A1A" />
+    </svg>
   );
 }
 
@@ -132,25 +95,202 @@ export default function Work() {
 
         {/* Section 2 — Case Studies */}
         <section className="section">
-          <p className="eyebrow">Work</p>
+          <p className="eyebrow">Case Studies</p>
           <div className="cs-list">
             {cases.map((cs, i) => (
-              <CaseStudy key={i} cs={cs} isLast={i === cases.length - 1} />
+              <div
+                key={i}
+                className={
+                  i < cases.length - 1 ? "cs-item cs-divider" : "cs-item"
+                }
+              >
+                <p className="cs-company">{cs.company}</p>
+                <h2 className="cs-title">{cs.title}</h2>
+                <p className="cs-result">{cs.result}</p>
+                <div className="cs-rows">
+                  <div className="cs-row">
+                    <p className="cs-label">Situation</p>
+                    <p className="cs-content">{cs.situation}</p>
+                  </div>
+                  <div className="cs-row">
+                    <p className="cs-label">Diagnosis</p>
+                    <p className="cs-content">{cs.diagnosis}</p>
+                  </div>
+                  <div className="cs-row">
+                    <p className="cs-label">What I built</p>
+                    <p className="cs-content">{cs.built}</p>
+                  </div>
+                  <div className="cs-row">
+                    <p className="cs-label">Outcome</p>
+                    <p className="cs-content">{cs.outcome}</p>
+                  </div>
+                </div>
+              </div>
             ))}
           </div>
         </section>
 
-        {/* Section 3 — Domain Snapshot */}
+        {/* Section 3 — Built & Shipped */}
+        <section className="section">
+          <p className="eyebrow">Built &amp; Shipped</p>
+          <p className="work-shipped-sub">
+            Live products built under Orvo AI — shipped using AI-accelerated
+            workflows.
+          </p>
+          <div className="shipped-grid">
+            {/* Orchpad */}
+            <a
+              href="https://orchpad.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="shipped-card"
+              style={{ background: "#0F1117" }}
+            >
+              <div className="shipped-top">
+                <div>
+                  <p className="shipped-label" style={{ color: "#6366f1" }}>
+                    Build
+                  </p>
+                  <p
+                    className="shipped-name"
+                    style={{ color: "#E8E9F2" }}
+                  >
+                    Orchpad
+                  </p>
+                </div>
+                <span className="shipped-badge">Invite only</span>
+              </div>
+              <div className="shipped-bottom">
+                <div className="shipped-dots-row">
+                  <span
+                    className="shipped-dot"
+                    style={{ background: "#6366f1" }}
+                  />
+                  <span
+                    className="shipped-dot"
+                    style={{ background: "#818cf8" }}
+                  />
+                  <span
+                    className="shipped-dot"
+                    style={{ background: "#4f46e5" }}
+                  />
+                  <span
+                    className="shipped-dots-label"
+                    style={{ color: "rgba(99,102,241,0.5)" }}
+                  >
+                    Build · Studio · Signal
+                  </span>
+                </div>
+                <p
+                  className="shipped-tagline"
+                  style={{ color: "rgba(232,233,242,0.7)" }}
+                >
+                  AI-native product workspace
+                </p>
+                <p
+                  className="shipped-url"
+                  style={{ color: "rgba(232,233,242,0.4)" }}
+                >
+                  orchpad.com
+                </p>
+              </div>
+            </a>
+
+            {/* skim. */}
+            <a
+              href="https://skim.getorvo.co"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="shipped-card"
+              style={{ background: "#F7F6F1" }}
+            >
+              <div className="shipped-top">
+                <div>
+                  <p className="shipped-label" style={{ color: "#8FBA24" }}>
+                    Learn
+                  </p>
+                  <p
+                    className="shipped-name"
+                    style={{ color: "#1A1A1A" }}
+                  >
+                    skim.
+                  </p>
+                </div>
+                <FoxSvg />
+              </div>
+              <div className="shipped-bottom">
+                <p
+                  className="shipped-tagline"
+                  style={{ color: "rgba(26,26,26,0.7)" }}
+                >
+                  Read less, know more.
+                </p>
+                <p
+                  className="shipped-url"
+                  style={{ color: "rgba(26,26,26,0.4)" }}
+                >
+                  skim.getorvo.co
+                </p>
+              </div>
+            </a>
+
+            {/* Mentor */}
+            <a
+              href="https://mentor.getorvo.co"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="shipped-card"
+              style={{ background: "#0D9488" }}
+            >
+              <div className="shipped-top">
+                <div>
+                  <p className="shipped-label" style={{ color: "#a7f3d0" }}>
+                    Career
+                  </p>
+                  <p
+                    className="shipped-name"
+                    style={{ color: "#fff", fontSize: "26px" }}
+                  >
+                    Mentor
+                  </p>
+                </div>
+              </div>
+              <div className="shipped-bottom">
+                <p
+                  className="shipped-hook"
+                  style={{ color: "#fff" }}
+                >
+                  You&apos;re worth more than you think.
+                </p>
+                <p
+                  className="shipped-tagline"
+                  style={{ color: "rgba(204,251,241,0.85)" }}
+                >
+                  Turn what you know into contracts
+                </p>
+                <p
+                  className="shipped-url"
+                  style={{ color: "rgba(255,255,255,0.4)" }}
+                >
+                  mentor.getorvo.co
+                </p>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        {/* Section 4 — Domain Snapshot */}
         <section className="section">
           <p className="eyebrow">Depth</p>
           <div className="work-depth">
             <p>
               Two-sided marketplaces — supply-demand dynamics, fulfillment,
-              liquidity, and loyalty systems across B2C and B2B models.
+              liquidity, and loyalty systems across B2C and B2B models in MENA
+              and KSA.
             </p>
             <p>
               B2B SaaS — activation funnels, retention loops, pricing strategy,
-              and AI-powered features at enterprise scale across MENA.
+              and AI-powered features at enterprise scale.
             </p>
             <p>
               AI products — LLM feature scoping and validation, predictive risk
@@ -160,7 +300,7 @@ export default function Work() {
           </div>
         </section>
 
-        {/* Section 4 — CTA */}
+        {/* Section 5 — CTA */}
         <section className="section">
           <p className="eyebrow">Get in touch</p>
           <h2 className="section-title">
@@ -193,11 +333,30 @@ export default function Work() {
       <footer>
         <div className="footer-links">
           <span>Meet Sam</span>
-          <ExternalLink href="https://www.orchpad.com">Orchpad</ExternalLink>
-          <ExternalLink href="https://landing.orchpad.getorvo.co/blog">
+          <a
+            href="https://www.orchpad.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link"
+          >
+            Orchpad
+          </a>
+          <a
+            href="https://landing.orchpad.getorvo.co/blog"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link"
+          >
             Blog
-          </ExternalLink>
-          <ExternalLink href={LINKEDIN_HREF}>LinkedIn</ExternalLink>
+          </a>
+          <a
+            href={LINKEDIN_HREF}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link"
+          >
+            LinkedIn
+          </a>
         </div>
         <span>Fractional Operator &amp; product builder</span>
       </footer>

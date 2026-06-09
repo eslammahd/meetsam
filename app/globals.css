@@ -289,7 +289,7 @@ section.section {
 
 .work-positioning {
   font-family: "Outfit", system-ui, sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 500;
   line-height: 1.5;
   color: var(--text);
@@ -387,6 +387,120 @@ section.section {
   font-size: 16px;
   line-height: 1.8;
   color: var(--text-muted);
+}
+
+/* Built & Shipped */
+.work-shipped-sub {
+  font-family: system-ui, sans-serif;
+  font-size: 15px;
+  color: var(--text-muted);
+  margin-top: 10px;
+}
+
+.shipped-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-top: 28px;
+}
+
+@media (min-width: 768px) {
+  .shipped-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.shipped-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  aspect-ratio: 16 / 10;
+  border-radius: 14px;
+  border: 0.5px solid var(--border);
+  padding: 20px;
+  text-decoration: none;
+  transition: opacity 0.15s ease;
+}
+
+.shipped-card:hover {
+  opacity: 0.88;
+}
+
+.shipped-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.shipped-label {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.shipped-name {
+  font-family: "Outfit", system-ui, sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 4px;
+  line-height: 1.1;
+}
+
+.shipped-badge {
+  font-size: 10px;
+  font-weight: 500;
+  background: rgba(99, 102, 241, 0.125);
+  color: #a5b4fc;
+  border: 0.5px solid rgba(99, 102, 241, 0.25);
+  border-radius: 20px;
+  padding: 3px 8px;
+  white-space: nowrap;
+}
+
+.shipped-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.shipped-dots-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 6px;
+}
+
+.shipped-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+}
+
+.shipped-dots-label {
+  font-size: 10px;
+  margin-left: 4px;
+}
+
+.shipped-hook {
+  font-family: system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 4px;
+}
+
+.shipped-tagline {
+  font-family: system-ui, sans-serif;
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.shipped-url {
+  font-family: system-ui, sans-serif;
+  font-size: 10px;
+  margin-top: 2px;
 }
 
 /* CTA links */
