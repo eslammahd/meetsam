@@ -46,25 +46,23 @@ export default function Home() {
       <main>
         {/* 1 — Hero */}
         <section className="hero">
-          <p className="eyebrow">Meet Sam</p>
+          <p className="eyebrow">MEET SAM</p>
           <h1 className="h1">
             I find what&apos;s broken. Then I fix it.
           </h1>
           <p className="lead">
-            I&apos;m Sam. I embed in your team as a fractional operator —
-            diagnosing problems, defining strategy, and shipping the fix. I
-            bring product thinking, business instincts, AI, and builder
-            execution together in one person.
+            I&apos;m Sam. I embed in your team, diagnose the real problem —
+            not the obvious one — and build the fix. 6 years across B2B SaaS
+            and marketplaces in MENA.
           </p>
           <p className="hero-proof">
-            5+ years across marketplaces, SaaS, and AI products · MENA and
-            Europe · Based in Cairo, open to async worldwide
+            Currently available for new engagements · Cairo-based · async
+            worldwide
           </p>
           <div>
             <Cta />
             <p className="note">
-              No pitch. No fluff. Just an honest conversation about your
-              business.
+              No pitch. If I can&apos;t help, I&apos;ll tell you.
             </p>
           </div>
         </section>
