@@ -133,12 +133,12 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
               className="shipped-card"
-              style={{ background: "#1C1F2E", borderColor: "rgba(255,255,255,0.08)" }}
+              style={{ background: "radial-gradient(ellipse at top right, #1a1f3c 0%, #07080D 60%)", borderColor: "rgba(255,255,255,0.08)" }}
             >
               <div className="shipped-top">
                 <div>
                   <p className="shipped-label" style={{ color: "#818cf8", background: "rgba(99,102,241,0.2)" }}>Build</p>
-                  <p className="shipped-name" style={{ color: "#E8E9F2", fontSize: "26px" }}>Orchpad</p>
+                  <p className="shipped-name" style={{ color: "#E8E9F2" }}>Orchpad</p>
                   <p className="shipped-desc" style={{ color: "#A0A3B8" }}>
                     An AI-native workspace where founders turn ideas into shipped products using agent workflows.
                   </p>
@@ -159,7 +159,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
               className="shipped-card"
-              style={{ background: "#EAE8E1", borderColor: "rgba(0,0,0,0.06)" }}
+              style={{ background: "radial-gradient(ellipse at bottom left, #e8e6dc 0%, #F7F6F1 60%)", borderColor: "rgba(0,0,0,0.06)" }}
             >
               <div className="shipped-top">
                 <div>
@@ -185,7 +185,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
               className="shipped-card"
-              style={{ background: "#0D9488", borderColor: "rgba(255,255,255,0.12)" }}
+              style={{ background: "radial-gradient(ellipse at top left, #0a7a6a 0%, #0D9488 60%)", borderColor: "rgba(255,255,255,0.12)" }}
             >
               <div className="shipped-top">
                 <div>
@@ -265,7 +265,7 @@ export default function Home() {
           <ExternalLink href="https://landing.orchpad.getorvo.co/blog">Blog</ExternalLink>
           <ExternalLink href="https://www.linkedin.com/in/eslamelmahdy/">LinkedIn</ExternalLink>
         </div>
-        <p className="footer-legal">Orvo AI Ltd · No. 17227105 · London, UK</p>
+        <p className="footer-legal">Orvo AI Ltd · London, UK</p>
       </footer>
     </>
   );
