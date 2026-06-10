@@ -1,5 +1,6 @@
 import Nav from "./nav";
 import CaseStudies from "./case-studies";
+import JorvoOwl from "../components/JorvoOwl";
 
 const BOOKING_HREF = "https://calendly.com/eslam-orchpad/30min";
 
@@ -185,20 +186,23 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
               className="shipped-card"
-              style={{ background: "#0A0A0F", borderColor: "rgba(255,255,255,0.08)" }}
+              style={{ background: "radial-gradient(circle at 84% 92%, rgba(124,58,237,0.22) 0%, transparent 55%), #0A0A0F", borderColor: "rgba(255,255,255,0.08)" }}
             >
               <div className="shipped-top">
                 <div>
                   <p className="shipped-label" style={{ color: "#7C3AED", background: "rgba(124,58,237,0.15)" }}>Jobs</p>
                   <p className="shipped-name" style={{ color: "#ffffff", fontSize: "26px" }}>Jorvo</p>
-                  <p className="shipped-desc" style={{ color: "#A0A0B8", fontSize: "13px" }}>
+                  <p className="shipped-desc" style={{ color: "#A0A0B8", fontSize: "13px", paddingRight: "96px" }}>
                     Finds the roles, scores them against your CV, and preps you to win — before anyone else applies.
                   </p>
                 </div>
                 <span className="shipped-status">Live</span>
               </div>
+              <span className="jorvo-owl-wrap" aria-hidden="true">
+                <JorvoOwl size={96} className="jorvo-owl" />
+              </span>
               <div className="shipped-bottom">
-                <div className="shipped-card-footer">
+                <div className="shipped-card-footer" style={{ justifyContent: "flex-start", gap: "8px" }}>
                   <p className="shipped-url" style={{ color: "rgba(124,58,237,0.6)" }}>jorvo.app</p>
                   <span className="shipped-arrow" style={{ color: "rgba(124,58,237,0.6)" }}>↗</span>
                 </div>
