@@ -1,6 +1,7 @@
 import Nav from "./nav";
 import CaseStudies from "./case-studies";
 import JorvoOwl from "../components/JorvoOwl";
+import SkimFox from "../components/SkimFox";
 
 const BOOKING_HREF = "https://calendly.com/eslam-orchpad/30min";
 
@@ -166,14 +167,17 @@ export default function Home() {
                 <div>
                   <p className="shipped-label" style={{ color: "#3B6D11", background: "rgba(59,109,17,0.12)" }}>Learn</p>
                   <p className="shipped-name" style={{ color: "#1a1a1a" }}>skim.</p>
-                  <p className="shipped-desc" style={{ color: "#6B6B5A" }}>
+                  <p className="shipped-desc" style={{ color: "#6B6B5A", paddingRight: "88px" }}>
                     Drop in anything you need to learn. It builds the lesson around you.
                   </p>
                 </div>
                 <span className="shipped-status">Live</span>
               </div>
+              <span className="skim-fox-wrap" aria-hidden="true">
+                <SkimFox size={88} className="skim-fox" />
+              </span>
               <div className="shipped-bottom">
-                <div className="shipped-card-footer">
+                <div className="shipped-card-footer" style={{ justifyContent: "flex-start", gap: "8px" }}>
                   <p className="shipped-url" style={{ color: "#6B6B5A" }}>skim.getorvo.co</p>
                   <span className="shipped-arrow" style={{ color: "#6B6B5A" }}>↗</span>
                 </div>

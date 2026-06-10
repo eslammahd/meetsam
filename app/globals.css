@@ -808,11 +808,61 @@ section.section {
   50% { transform: translateY(-4px); }
 }
 
+/* skim.'s fox, perched in the corner of the skim playground card.
+ * Floats gently and wags its tail; the wag speeds up when the card
+ * is hovered (same trick as the fox's "delighted" mood in skim). */
+.skim-fox-wrap {
+  position: absolute;
+  right: 14px;
+  bottom: 10px;
+  line-height: 0;
+  pointer-events: none;
+}
+
+.skim-fox {
+  display: block;
+  filter: drop-shadow(0 8px 16px rgba(58, 58, 40, 0.25));
+  transition: transform 0.3s ease;
+}
+
+.shipped-card:hover .skim-fox {
+  transform: translateY(-5px);
+}
+
+.skim-fox-float {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: skim-fox-float 3.4s ease-in-out infinite;
+}
+
+.skim-fox-tail {
+  transform-box: fill-box;
+  transform-origin: 6% 92%;
+  animation: skim-fox-tail 3.2s ease-in-out infinite;
+}
+
+.shipped-card:hover .skim-fox-tail {
+  animation-duration: 1.2s;
+}
+
+@keyframes skim-fox-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+
+@keyframes skim-fox-tail {
+  0%, 100% { transform: rotate(-5deg); }
+  50% { transform: rotate(7deg); }
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .jorvo-owl-wrap {
+  .jorvo-owl-wrap,
+  .skim-fox-float,
+  .skim-fox-tail {
     animation: none;
   }
-  .jorvo-owl {
+  .jorvo-owl,
+  .skim-fox {
     transition: none;
   }
 }
