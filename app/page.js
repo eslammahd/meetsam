@@ -50,7 +50,7 @@ export default function Home() {
           <div className="hero-left">
             <p className="eyebrow">MEET SAM</p>
             <h1 className="h1">
-              Your product works<br className="hero-br-desktop" /> but your numbers don&apos;t?<br />
+              Your product works<br /> but your numbers don&apos;t?<br />
               <span className="h1-coda">Let&apos;s figure out why.</span>
             </h1>
             <p className="lead">
@@ -159,7 +159,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
               className="shipped-card"
-              style={{ background: "radial-gradient(ellipse at bottom left, #e8e6dc 0%, #F7F6F1 60%)", borderColor: "rgba(0,0,0,0.06)" }}
+              style={{ background: "radial-gradient(ellipse at bottom left, #e8e6dc 0%, #F7F6F1 60%)", border: "0.5px solid #D4D1C4" }}
             >
               <div className="shipped-top">
                 <div>
@@ -173,8 +173,8 @@ export default function Home() {
               </div>
               <div className="shipped-bottom">
                 <div className="shipped-card-footer">
-                  <p className="shipped-url" style={{ color: "rgba(255,255,255,0.5)" }}>skim.getorvo.co</p>
-                  <span className="shipped-arrow" style={{ color: "#9ca3af" }}>↗</span>
+                  <p className="shipped-url" style={{ color: "#6B6B5A" }}>skim.getorvo.co</p>
+                  <span className="shipped-arrow" style={{ color: "#6B6B5A" }}>↗</span>
                 </div>
               </div>
             </a>
@@ -264,6 +264,7 @@ export default function Home() {
           <ExternalLink href="https://www.getorvo.co">Orvo AI Ltd</ExternalLink>
           <ExternalLink href="https://landing.orchpad.getorvo.co/blog">Blog</ExternalLink>
           <ExternalLink href="https://www.linkedin.com/in/eslamelmahdy/">LinkedIn</ExternalLink>
+          <a href="mailto:eslam@orchpad.com" className="link">eslam@orchpad.com</a>
         </div>
         <p className="footer-legal">Orvo AI Ltd · London, UK</p>
       </footer>
