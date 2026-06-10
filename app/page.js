@@ -179,28 +179,28 @@ export default function Home() {
               </div>
             </a>
 
-            {/* Mentor — teal */}
+            {/* Jorvo — void dark */}
             <a
-              href="https://mentor.getorvo.co"
+              href="https://jorvo.app"
               target="_blank"
               rel="noopener noreferrer"
               className="shipped-card"
-              style={{ background: "radial-gradient(ellipse at top left, #0a7a6a 0%, #0D9488 60%)", borderColor: "rgba(255,255,255,0.12)" }}
+              style={{ background: "#0A0A0F", borderColor: "rgba(255,255,255,0.08)" }}
             >
               <div className="shipped-top">
                 <div>
-                  <p className="shipped-label" style={{ color: "#ccfbf1", background: "rgba(255,255,255,0.15)" }}>Career</p>
-                  <p className="shipped-name" style={{ color: "#f0fdfa" }}>Mentor</p>
-                  <p className="shipped-desc" style={{ color: "#ccfbf1" }}>
-                    Connects what you know to people willing to pay for it.
+                  <p className="shipped-label" style={{ color: "#7C3AED", background: "rgba(124,58,237,0.15)" }}>Jobs</p>
+                  <p className="shipped-name" style={{ color: "#ffffff", fontSize: "26px" }}>Jorvo</p>
+                  <p className="shipped-desc" style={{ color: "#A0A0B8", fontSize: "13px" }}>
+                    Finds the roles, scores them against your CV, and preps you to win — before anyone else applies.
                   </p>
                 </div>
-                <span className="shipped-status" style={{ background: "rgba(255,255,255,0.15)", color: "#ccfbf1", border: "0.5px solid rgba(255,255,255,0.3)" }}>Live</span>
+                <span className="shipped-status">Live</span>
               </div>
               <div className="shipped-bottom">
                 <div className="shipped-card-footer">
-                  <p className="shipped-url" style={{ color: "rgba(255,255,255,0.5)" }}>mentor.getorvo.co</p>
-                  <span className="shipped-arrow" style={{ color: "#5eead4" }}>↗</span>
+                  <p className="shipped-url" style={{ color: "rgba(124,58,237,0.6)" }}>jorvo.app</p>
+                  <span className="shipped-arrow" style={{ color: "rgba(124,58,237,0.6)" }}>↗</span>
                 </div>
               </div>
             </a>
