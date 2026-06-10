@@ -783,6 +783,40 @@ section.section {
   opacity: 0.6;
 }
 
+/* Jorvo's owl, perched in the corner of the Jorvo playground card */
+.jorvo-owl-wrap {
+  position: absolute;
+  right: 10px;
+  bottom: 12px;
+  line-height: 0;
+  pointer-events: none;
+  animation: jorvo-owl-bob 6s ease-in-out infinite;
+}
+
+.jorvo-owl {
+  display: block;
+  filter: drop-shadow(0 8px 18px rgba(46, 16, 101, 0.45));
+  transition: transform 0.3s ease;
+}
+
+.shipped-card:hover .jorvo-owl {
+  transform: translateY(-6px);
+}
+
+@keyframes jorvo-owl-bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .jorvo-owl-wrap {
+    animation: none;
+  }
+  .jorvo-owl {
+    transition: none;
+  }
+}
+
 /* CTA links */
 .work-cta-links {
   display: flex;
