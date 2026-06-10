@@ -795,7 +795,7 @@ section.section {
 
 .jorvo-owl {
   display: block;
-  filter: drop-shadow(0 0 16px rgba(124, 58, 237, 0.35));
+  filter: drop-shadow(0 8px 18px rgba(46, 16, 101, 0.45));
   transition: transform 0.3s ease;
 }
 
