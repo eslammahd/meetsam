@@ -14,6 +14,10 @@ function ExternalLink({ href, children }) {
   );
 }
 
+const Orchpad = () => (
+  <ExternalLink href="https://www.orchpad.com">Orchpad</ExternalLink>
+);
+
 const results = [
   { num: "30% → 50%", label: "trial-to-paid in 3 months" },
   { num: "30% → 22%", label: "churn in 90 days" },
@@ -222,7 +226,9 @@ export default function Home() {
           <span>Sam</span>
           <a href="/work-with-me" className="link">Work with me</a>
           <a href="#writing" className="link">Writing</a>
+          <Orchpad />
           <ExternalLink href="https://www.linkedin.com/in/eslamelmahdy/">LinkedIn</ExternalLink>
+          <a href="mailto:eslamsaad@outlook.com" className="link">eslamsaad@outlook.com</a>
         </div>
         <p className="footer-legal">AI-native product builder · Cairo</p>
       </footer>

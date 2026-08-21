@@ -11,6 +11,10 @@ function ExternalLink({ href, children }) {
   );
 }
 
+const Orchpad = () => (
+  <ExternalLink href="https://www.orchpad.com">Orchpad</ExternalLink>
+);
+
 export const metadata = {
   title: "Work with me — meetsam.me",
   description:
@@ -78,10 +82,10 @@ export default function WorkWithMe() {
           <p className="svc-body">
             I use AI-accelerated workflows to plan, build, test, and deploy. Not
             vibe-coding. Structured agent orchestration with real output —
-            scoped, built, and shipped.
+            scoped, built, and shipped inside <Orchpad />.
           </p>
           <p className="svc-anchor">
-            AI-accelerated build · Live MVP · Agent-directed delivery
+            AI-accelerated build · Live MVP · Delivered inside Orchpad
           </p>
         </section>
 
@@ -93,8 +97,8 @@ export default function WorkWithMe() {
           <p className="eyebrow">Proof</p>
           <ul className="proof">
             <li>
-              Architected a multi-agent build system that takes a written spec
-              to deployed production software
+              Took Orchpad from zero to live product in under 4 weeks using AI
+              agent workflows
             </li>
             <li>
               Improved search success rate by 15% and cut AI iteration cycles
@@ -136,11 +140,12 @@ export default function WorkWithMe() {
       <footer>
         <div className="footer-links">
           <a href="/" className="link">Sam</a>
+          <Orchpad />
           <ExternalLink href="https://www.getorvo.co">Orvo AI Ltd</ExternalLink>
           <ExternalLink href="https://www.linkedin.com/in/eslamelmahdy/">LinkedIn</ExternalLink>
-          <a href="mailto:eslam@orchpad.com" className="link">eslam@orchpad.com</a>
+          <a href="mailto:eslamsaad@outlook.com" className="link">eslamsaad@outlook.com</a>
         </div>
-        <p className="footer-legal">AI-native product builder · Cairo</p>
+        <p className="footer-legal">Orvo AI Ltd · London, UK</p>
       </footer>
     </>
   );
