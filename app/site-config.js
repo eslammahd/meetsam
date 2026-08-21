@@ -12,4 +12,10 @@
  */
 export const SHOW_SERVICES_ON_HOME = false;
 
+/**
+ * "How I think" is off the homepage for now but kept intact in
+ * app/sections/how-i-think.js. Flip to true to render it back.
+ */
+export const SHOW_HOW_I_THINK_ON_HOME = false;
+
 export const BOOKING_HREF = "https://calendly.com/eslam-orchpad/30min";

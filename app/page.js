@@ -2,7 +2,8 @@ import Nav from "./nav";
 import SelectedWork from "./selected-work";
 import WhoIWorkWith from "./sections/who-i-work-with";
 import ServiceOptions from "./sections/service-options";
-import { SHOW_SERVICES_ON_HOME } from "./site-config";
+import HowIThink from "./sections/how-i-think";
+import { SHOW_SERVICES_ON_HOME, SHOW_HOW_I_THINK_ON_HOME } from "./site-config";
 import JorvoOwl from "../components/JorvoOwl";
 import SkimFox from "../components/SkimFox";
 
@@ -18,13 +19,15 @@ const Orchpad = () => (
   <ExternalLink href="https://www.orchpad.com">Orchpad</ExternalLink>
 );
 
+/**
+ * Trial-to-paid, churn and cancellations are deliberately absent — those
+ * three already carry their own card in Selected Work, so repeating them
+ * here would double-count the same wins.
+ */
 const results = [
-  { num: "30% → 50%", label: "trial-to-paid in 3 months" },
-  { num: "30% → 22%", label: "churn in 90 days" },
   { num: "−60%", label: "data costs" },
   { num: "+40%", label: "engagement" },
   { num: "+70%", label: "SLA" },
-  { num: "−25%", label: "cancellations" },
   { num: "+35%", label: "profit" },
   { num: "+40%", label: "BNPL activation" },
 ];
@@ -66,12 +69,12 @@ export default function Home() {
         {/* 3 — Results */}
         <section className="section">
           <p className="eyebrow">Results</p>
-          <div className="results-strip">
+          <div className="results-grid">
             {results.map((r) => (
-              <span key={r.label} className="result-item">
-                <span className="result-num">{r.num}</span>{" "}
-                <span className="result-label">{r.label}</span>
-              </span>
+              <div key={r.label} className="result-card">
+                <p className="result-num">{r.num}</p>
+                <p className="result-label">{r.label}</p>
+              </div>
             ))}
           </div>
         </section>
@@ -169,32 +172,8 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 5 — How I think */}
-        <section className="section">
-          <p className="eyebrow">How I think</p>
-          <h2 className="section-title think-headline">
-            Most growth problems aren&apos;t marketing problems. They&apos;re
-            system problems.
-          </h2>
-          <p className="lead">
-            Pricing that was never anchored to anything. Onboarding that leaks
-            in a place nobody instrumented. Ops running on manual handoffs that
-            only fail quietly. The metrics are bleeding and nobody can point at
-            where.
-          </p>
-          <p className="lead">
-            That&apos;s the work. Diagnose what&apos;s actually broken, build
-            the fix, and close the loop on whether it worked.
-          </p>
-          <p className="lead">
-            My background is Industrial Design, not computer science.
-            That&apos;s why I think in systems before features and user
-            behavior before assumptions — and it&apos;s why most of my wins
-            came from finding a structural problem where everyone else saw a
-            marketing one.
-          </p>
-          <p className="think-signoff">— Eslam &ldquo;Sam&rdquo; Saad</p>
-        </section>
+        {/* 5 — How I think (off the homepage; see app/site-config.js) */}
+        {SHOW_HOW_I_THINK_ON_HOME && <HowIThink />}
 
         {/* 6 — Writing */}
         <section className="section" id="writing">

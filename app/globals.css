@@ -1632,41 +1632,56 @@ footer .link:hover {
   margin-top: 14px;
 }
 
-/* Results strip */
-.results-strip {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 8px 14px;
+/* Results — the hero stat card treatment (left rule, big number, label
+   beneath) laid out as a grid. Built on tokens rather than reusing
+   .hero-stat-card directly, whose border and number colours are light-mode
+   hex literals that would not survive the dark theme. */
+.results-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
   margin-top: 28px;
-  max-width: 78ch;
 }
 
-.result-item {
-  display: inline-flex;
-  align-items: baseline;
-  gap: 6px;
+@media (min-width: 640px) {
+  .results-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
-.result-item:not(:last-child)::after {
-  content: "·";
-  margin-left: 14px;
-  color: var(--text-muted);
-  opacity: 0.6;
+@media (min-width: 1024px) {
+  .results-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.result-card {
+  border-left: 2px solid var(--border);
+  padding: 2px 0 6px 18px;
+  transition: border-left-color 0.2s ease;
+}
+
+.result-card:hover {
+  border-left-color: var(--accent);
 }
 
 .result-num {
   font-family: "Outfit", system-ui, sans-serif;
   font-weight: 500;
   font-variant-numeric: tabular-nums;
-  font-size: 17px;
+  font-size: 32px;
+  line-height: 1;
+  /* Same metric colour as .cs-result, so the numbers here read as the same
+     kind of thing as the metrics on the Selected Work cards. */
   color: #d85a30;
-  white-space: nowrap;
+  margin: 0 0 8px;
 }
 
 .result-label {
-  font-size: 15px;
-  color: var(--text-muted);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+  margin: 0;
 }
 
 /* How I think */
