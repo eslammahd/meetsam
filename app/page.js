@@ -207,7 +207,7 @@ export default function Home() {
           <a href="#writing" className="link">Writing</a>
           <Orchpad />
           <ExternalLink href="https://www.linkedin.com/in/eslamelmahdy/">LinkedIn</ExternalLink>
-          <a href="mailto:eslamsaad@outlook.com" className="link">eslamsaad@outlook.com</a>
+          <a href="mailto:eslamsaad@outlook.com" className="link footer-email">eslamsaad@outlook.com</a>
         </div>
         <p className="footer-legal">Eslam &ldquo;Sam&rdquo; Saad · AI-native product builder · Cairo</p>
       </footer>

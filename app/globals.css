@@ -1227,8 +1227,22 @@ footer {
 
 .footer-links {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 22px;
+  gap: 10px 22px;
+  /* flex items default to min-width:auto, which lets a long word (the email
+     address) push the row wider than the viewport instead of wrapping */
+  min-width: 0;
+}
+
+.footer-links > * {
+  min-width: 0;
+}
+
+/* The address is one unbreakable token at narrow widths — allow it to break
+   rather than overflow the page. */
+.footer-email {
+  overflow-wrap: anywhere;
 }
 
 footer .link {
@@ -1638,7 +1652,9 @@ footer .link:hover {
    hex literals that would not survive the dark theme. */
 .results-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  /* Two up at mobile — five in a single column is roughly two screens of
+     scroll for a section that is meant to be scanned at a glance. */
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   margin-top: 28px;
 }

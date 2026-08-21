@@ -143,7 +143,7 @@ export default function WorkWithMe() {
           <Orchpad />
           <ExternalLink href="https://www.getorvo.co">Orvo AI Ltd</ExternalLink>
           <ExternalLink href="https://www.linkedin.com/in/eslamelmahdy/">LinkedIn</ExternalLink>
-          <a href="mailto:eslamsaad@outlook.com" className="link">eslamsaad@outlook.com</a>
+          <a href="mailto:eslamsaad@outlook.com" className="link footer-email">eslamsaad@outlook.com</a>
         </div>
         <p className="footer-legal">Eslam &ldquo;Sam&rdquo; Saad · Orvo AI Ltd · London, UK</p>
       </footer>
