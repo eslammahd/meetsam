@@ -1,9 +1,11 @@
 import Nav from "./nav";
-import CaseStudies from "./case-studies";
+import SelectedWork from "./selected-work";
+import WhoIWorkWith from "./sections/who-i-work-with";
+import ServiceOptions from "./sections/service-options";
+import HowIThink from "./sections/how-i-think";
+import { SHOW_SERVICES_ON_HOME, SHOW_HOW_I_THINK_ON_HOME } from "./site-config";
 import JorvoOwl from "../components/JorvoOwl";
 import SkimFox from "../components/SkimFox";
-
-const BOOKING_HREF = "https://calendly.com/eslam-orchpad/30min";
 
 function ExternalLink({ href, children }) {
   return (
@@ -17,28 +19,24 @@ const Orchpad = () => (
   <ExternalLink href="https://www.orchpad.com">Orchpad</ExternalLink>
 );
 
-function Cta() {
-  return (
-    <a
-      href={BOOKING_HREF}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="btn"
-    >
-      Book a free 30-min call
-    </a>
-  );
-}
+/**
+ * Trial-to-paid, churn and cancellations are deliberately absent — those
+ * three already carry their own card in Selected Work, so repeating them
+ * here would double-count the same wins.
+ */
+const results = [
+  { num: "−60%", label: "data costs" },
+  { num: "+40%", label: "engagement" },
+  { num: "+70%", label: "SLA" },
+  { num: "+35%", label: "profit" },
+  { num: "+40%", label: "BNPL activation" },
+];
 
-function Tags({ tags }) {
-  return (
-    <div className="inline-tags">
-      {tags.map((t) => (
-        <span key={t} className="inline-tag">{t}</span>
-      ))}
-    </div>
-  );
-}
+const writing = [
+  "Build teardowns",
+  "PM × AI",
+  "The diagnosis pattern",
+];
 
 export default function Home() {
   return (
@@ -46,80 +44,39 @@ export default function Home() {
       <Nav />
 
       <main>
-        {/* 1 — Hero (two-column) */}
-        <section className="hero hero-2col">
-          {/* Left column */}
-          <div className="hero-left">
-            <p className="eyebrow">MEET SAM</p>
-            <h1 className="h1">
-              Your product works<br /> but your numbers don&apos;t?<br />
-              <span className="h1-coda">Let&apos;s figure out why.</span>
-            </h1>
-            <p className="lead">
-              I&apos;m Sam. I embed in your team, diagnose the real problem —
-              not the obvious one — and build the fix. 6+ years across B2B SaaS
-              and marketplaces in MENA.
-            </p>
-            <div className="hero-cta-block">
-              <Cta />
-              <p className="note">
-                No pitch. If I can&apos;t help, I&apos;ll tell you.
-              </p>
-            </div>
-          </div>
-
-          {/* Right column — proof stats */}
-          <div className="hero-right">
-            <div className="hero-stat-card">
-              <p className="hero-stat-num">25%</p>
-              <p className="hero-stat-label">fewer cancellations</p>
-              <p className="hero-stat-sub">AI risk model · KSA marketplace</p>
-            </div>
-            <div className="hero-stat-card">
-              <p className="hero-stat-num">40%</p>
-              <p className="hero-stat-label">BNPL activation increase</p>
-              <p className="hero-stat-sub">Credit scorecards · B2B Egypt</p>
-            </div>
-            <div className="hero-stat-card hero-stat-card--last">
-              <p className="hero-stat-num">4 weeks</p>
-              <p className="hero-stat-label">zero to live product</p>
-              <p className="hero-stat-sub">Orchpad · AI agent workflows</p>
-            </div>
-            <div className="hero-stat-footer">
-              <a href="#case-studies" className="hp-stat-more">See case studies ↓</a>
-            </div>
+        {/* 1 — Hero: identity, not offer */}
+        <section className="hero hero-single">
+          <p className="eyebrow">Sam</p>
+          <h1 className="h1">I build AI-native products end to end.</h1>
+          <p className="lead">
+            Senior product manager. Six years fixing growth, activation and
+            retention problems at B2B SaaS and marketplace companies across
+            MENA — now architecting multi-agent workflows that ship production
+            software, spec to deployed product.
+          </p>
+          <p className="hero-proof">Cairo · Working across MENA, EMEA and GCC</p>
+          <div className="hero-cta-block">
+            <a href="#selected-work" className="btn">See the work ↓</a>
           </div>
         </section>
 
-        {/* 2 — Who I work with */}
+        {/* 2 — Selected work: the evidence */}
+        <section className="section" id="selected-work">
+          <p className="eyebrow">Selected work</p>
+          <SelectedWork />
+        </section>
+
+        {/* 3 — Results */}
         <section className="section">
-          <p className="eyebrow">Who I work with</p>
-          <div className="hp-who-grid">
-            <div className="hp-who-card">
-              <span className="hp-who-bg-num">01</span>
-              <p className="hp-who-label">Something&apos;s off</p>
-              <p className="hp-who-desc">You know the metrics aren&apos;t moving. You don&apos;t know exactly why.</p>
-              <Tags tags={["Activation", "Retention"]} />
-            </div>
-            <div className="hp-who-card">
-              <span className="hp-who-bg-num">02</span>
-              <p className="hp-who-label">Growth has stalled</p>
-              <p className="hp-who-desc">The team is working hard. The numbers aren&apos;t moving. Nobody agrees on why.</p>
-              <Tags tags={["Growth", "Product strategy"]} />
-            </div>
-            <div className="hp-who-card">
-              <span className="hp-who-bg-num">03</span>
-              <p className="hp-who-label">You need an owner</p>
-              <p className="hp-who-desc">Not another advisor. Someone embedded, accountable, end-to-end.</p>
-              <Tags tags={["Fractional", "End-to-end"]} />
-            </div>
+          <p className="eyebrow">Results</p>
+          <div className="results-grid">
+            {results.map((r) => (
+              <div key={r.label} className="result-card">
+                <p className="result-num">{r.num}</p>
+                <p className="result-label">{r.label}</p>
+              </div>
+            ))}
           </div>
-        </section>
-
-        {/* 3 — Case Studies */}
-        <section className="section" id="case-studies">
-          <p className="eyebrow">Case Studies</p>
-          <CaseStudies />
         </section>
 
         {/* 4 — My Playground */}
@@ -215,66 +172,44 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 5 — Work with Sam */}
-        <section className="section">
-          <p className="eyebrow">Work with Sam</p>
-          <div className="cards">
-            {/* Option 1 */}
-            <div className="card">
-              <p className="card-label">Option 1</p>
-              <h3 className="card-name">Product Sprint</h3>
-              <p className="card-price">2-week engagement</p>
-              <ul>
-                <li>Diagnose the real problem — not the surface symptoms</li>
-                <li>Define the strategy and what to build</li>
-                <li>Deliver roadmap, MVP spec, and 90-day execution plan</li>
-                <li>Built and delivered inside <Orchpad /></li>
-              </ul>
-              <Tags tags={["2 weeks", "Diagnosis", "Roadmap"]} />
-              <a
-                href={BOOKING_HREF}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="card-btn"
-              >
-                Start a Sprint →
-              </a>
-            </div>
+        {/* 5 — How I think (off the homepage; see app/site-config.js) */}
+        {SHOW_HOW_I_THINK_ON_HOME && <HowIThink />}
 
-            {/* Option 2 */}
-            <div className="card">
-              <p className="card-label">Option 2</p>
-              <h3 className="card-name">Fractional Operator</h3>
-              <p className="card-price">Monthly retainer · async-first</p>
-              <ul>
-                <li>Embedded in your team 10hrs/week</li>
-                <li>Own a product vertical or business function end-to-end</li>
-                <li>Diagnose, prioritize, execute, and close the loop</li>
-                <li>Delivered inside <Orchpad /></li>
-              </ul>
-              <Tags tags={["Ongoing", "Embedded", "Multi-agent"]} />
-              <a
-                href={BOOKING_HREF}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="card-btn"
-              >
-                Embed with me →
-              </a>
-            </div>
+        {/* 6 — Writing */}
+        <section className="section" id="writing">
+          <p className="eyebrow">Writing</p>
+          <div className="cs-cards">
+            {writing.map((topic) => (
+              <div key={topic} className="cs-card writing-card">
+                <div className="sw-card-body">
+                  <p className="cs-company">Soon</p>
+                  <h3 className="cs-title">{topic}</h3>
+                </div>
+              </div>
+            ))}
           </div>
         </section>
+
+        {/* Phase 1 — services return to the homepage from here.
+            See app/site-config.js. */}
+        {SHOW_SERVICES_ON_HOME && (
+          <>
+            <WhoIWorkWith />
+            <ServiceOptions />
+          </>
+        )}
       </main>
 
       <footer>
         <div className="footer-links">
-          <span>Meet Sam</span>
-          <ExternalLink href="https://www.getorvo.co">Orvo AI Ltd</ExternalLink>
-          <ExternalLink href="https://landing.orchpad.getorvo.co/blog">Blog</ExternalLink>
+          <span>Sam</span>
+          <a href="/work-with-me" className="link">Work with me</a>
+          <a href="#writing" className="link">Writing</a>
+          <Orchpad />
           <ExternalLink href="https://www.linkedin.com/in/eslamelmahdy/">LinkedIn</ExternalLink>
-          <a href="mailto:eslam@orchpad.com" className="link">eslam@orchpad.com</a>
+          <a href="mailto:eslamsaad@outlook.com" className="link footer-email">eslamsaad@outlook.com</a>
         </div>
-        <p className="footer-legal">Orvo AI Ltd · London, UK</p>
+        <p className="footer-legal">Eslam &ldquo;Sam&rdquo; Saad · AI-native product builder · Cairo</p>
       </footer>
     </>
   );

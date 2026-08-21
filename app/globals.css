@@ -1227,8 +1227,22 @@ footer {
 
 .footer-links {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 22px;
+  gap: 10px 22px;
+  /* flex items default to min-width:auto, which lets a long word (the email
+     address) push the row wider than the viewport instead of wrapping */
+  min-width: 0;
+}
+
+.footer-links > * {
+  min-width: 0;
+}
+
+/* The address is one unbreakable token at narrow widths — allow it to break
+   rather than overflow the page. */
+.footer-email {
+  overflow-wrap: anywhere;
 }
 
 footer .link {
@@ -1590,4 +1604,129 @@ footer .link:hover {
   border-radius: 4px;
   padding: 3px 8px;
   background: transparent;
+}
+
+/* ── Phase 0 portfolio sections ────────────────────────────────── */
+
+/* Single-column hero — identity, not offer */
+.hero-single .h1 {
+  margin-top: 16px;
+  /* Three-line block at every breakpoint, matching the tuned rhythm of the
+     previous forced-break headline. Longest line is "I build AI-native". */
+  max-width: 18ch;
+}
+
+.hero-single .lead {
+  margin-top: 24px;
+}
+
+.hero-single .hero-proof {
+  margin-top: 20px;
+}
+
+/* Selected work — static cards, same anatomy as the case study cards */
+.sw-card-body {
+  padding: 20px 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.sw-context {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text-muted);
+  margin-top: 6px;
+}
+
+.sw-body {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text);
+  margin-top: 14px;
+}
+
+/* Results — the hero stat card treatment (left rule, big number, label
+   beneath) laid out as a grid. Built on tokens rather than reusing
+   .hero-stat-card directly, whose border and number colours are light-mode
+   hex literals that would not survive the dark theme. */
+.results-grid {
+  display: grid;
+  /* Two up at mobile — five in a single column is roughly two screens of
+     scroll for a section that is meant to be scanned at a glance. */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 28px;
+}
+
+@media (min-width: 640px) {
+  .results-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .results-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.result-card {
+  border-left: 2px solid var(--border);
+  padding: 2px 0 6px 18px;
+  transition: border-left-color 0.2s ease;
+}
+
+.result-card:hover {
+  border-left-color: var(--accent);
+}
+
+.result-num {
+  font-family: "Outfit", system-ui, sans-serif;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  font-size: 32px;
+  line-height: 1;
+  /* Same metric colour as .cs-result, so the numbers here read as the same
+     kind of thing as the metrics on the Selected Work cards. */
+  color: #d85a30;
+  margin: 0 0 8px;
+}
+
+.result-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+  margin: 0;
+}
+
+/* How I think */
+.think-headline {
+  max-width: 30ch;
+}
+
+.think-signoff {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-top: 28px;
+}
+
+/* Writing — stub slots until the posts accumulate */
+.writing-card {
+  opacity: 0.72;
+}
+
+.writing-card .cs-title {
+  margin-top: 6px;
+}
+
+/* "Who I work with" cards were built with light-mode hex literals, so in dark
+   mode the labels rendered near-white on a near-white card. Dark-only override
+   using the existing surface tokens — light mode is unchanged. */
+.dark .hp-who-card {
+  background: var(--bg-raised);
+}
+
+.dark .hp-who-bg-num {
+  color: var(--border);
 }
