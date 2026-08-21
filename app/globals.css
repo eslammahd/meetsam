@@ -1591,3 +1591,111 @@ footer .link:hover {
   padding: 3px 8px;
   background: transparent;
 }
+
+/* ── Phase 0 portfolio sections ────────────────────────────────── */
+
+/* Single-column hero — identity, not offer */
+.hero-single .h1 {
+  margin-top: 16px;
+  /* Three-line block at every breakpoint, matching the tuned rhythm of the
+     previous forced-break headline. Longest line is "I build AI-native". */
+  max-width: 18ch;
+}
+
+.hero-single .lead {
+  margin-top: 24px;
+}
+
+.hero-single .hero-proof {
+  margin-top: 20px;
+}
+
+/* Selected work — static cards, same anatomy as the case study cards */
+.sw-card-body {
+  padding: 20px 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.sw-context {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text-muted);
+  margin-top: 6px;
+}
+
+.sw-body {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text);
+  margin-top: 14px;
+}
+
+/* Results strip */
+.results-strip {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px 14px;
+  margin-top: 28px;
+  max-width: 78ch;
+}
+
+.result-item {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.result-item:not(:last-child)::after {
+  content: "·";
+  margin-left: 14px;
+  color: var(--text-muted);
+  opacity: 0.6;
+}
+
+.result-num {
+  font-family: "Outfit", system-ui, sans-serif;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  font-size: 17px;
+  color: #d85a30;
+  white-space: nowrap;
+}
+
+.result-label {
+  font-size: 15px;
+  color: var(--text-muted);
+}
+
+/* How I think */
+.think-headline {
+  max-width: 30ch;
+}
+
+.think-signoff {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-top: 28px;
+}
+
+/* Writing — stub slots until the posts accumulate */
+.writing-card {
+  opacity: 0.72;
+}
+
+.writing-card .cs-title {
+  margin-top: 6px;
+}
+
+/* "Who I work with" cards were built with light-mode hex literals, so in dark
+   mode the labels rendered near-white on a near-white card. Dark-only override
+   using the existing surface tokens — light mode is unchanged. */
+.dark .hp-who-card {
+  background: var(--bg-raised);
+}
+
+.dark .hp-who-bg-num {
+  color: var(--border);
+}
