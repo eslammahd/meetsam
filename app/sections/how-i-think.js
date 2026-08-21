@@ -2,9 +2,10 @@
  * Removed from the homepage but kept intact — flip SHOW_HOW_I_THINK_ON_HOME
  * in app/site-config.js to render it again.
  *
- * Note: the sign-off is the deck's "name bridge" — the one place both names
- * appear, resolving the mismatch between the CV header and this site. While
- * this section is off, that bridge is not on the site anywhere.
+ * Note: the sign-off is the deck's "name bridge" — it resolves the mismatch
+ * between the CV header and this site. While this section is off, that job is
+ * done by the footer tagline on both pages, so if this section comes back,
+ * check whether the name should still be duplicated there.
  */
 export default function HowIThink() {
   return (

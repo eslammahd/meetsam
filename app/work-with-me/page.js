@@ -145,7 +145,7 @@ export default function WorkWithMe() {
           <ExternalLink href="https://www.linkedin.com/in/eslamelmahdy/">LinkedIn</ExternalLink>
           <a href="mailto:eslamsaad@outlook.com" className="link">eslamsaad@outlook.com</a>
         </div>
-        <p className="footer-legal">Orvo AI Ltd · London, UK</p>
+        <p className="footer-legal">Eslam &ldquo;Sam&rdquo; Saad · Orvo AI Ltd · London, UK</p>
       </footer>
     </>
   );
