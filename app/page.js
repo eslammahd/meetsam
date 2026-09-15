@@ -4,8 +4,6 @@ import WhoIWorkWith from "./sections/who-i-work-with";
 import ServiceOptions from "./sections/service-options";
 import HowIThink from "./sections/how-i-think";
 import { SHOW_SERVICES_ON_HOME, SHOW_HOW_I_THINK_ON_HOME } from "./site-config";
-import JorvoOwl from "../components/JorvoOwl";
-import SkimFox from "../components/SkimFox";
 
 function ExternalLink({ href, children }) {
   return (
@@ -83,7 +81,7 @@ export default function Home() {
         <section className="section">
           <p className="eyebrow">My Playground</p>
           <p className="hp-shipped-sub">
-            Three products I built from scratch, alone, in my free time. No team. No budget. Just curiosity and too many late nights.
+            Products I built from scratch, alone, in my free time. No team. No budget. Just curiosity and too many late nights.
           </p>
           <div className="shipped-grid">
             {/* Orchpad — dark */}
@@ -112,60 +110,28 @@ export default function Home() {
               </div>
             </a>
 
-            {/* skim. — warm cream */}
+            {/* Orvo Intelligence — dark/purple, same family as Orchpad */}
             <a
-              href="https://skim.getorvo.co"
+              href="https://intelligence.getorvo.co"
               target="_blank"
               rel="noopener noreferrer"
               className="shipped-card"
-              style={{ background: "radial-gradient(ellipse at bottom left, #e8e6dc 0%, #F7F6F1 60%)", border: "0.5px solid #D4D1C4" }}
+              style={{ background: "radial-gradient(ellipse at top right, #241a3c 0%, #0A0710 60%)", borderColor: "rgba(255,255,255,0.08)" }}
             >
               <div className="shipped-top">
                 <div>
-                  <p className="shipped-label" style={{ color: "#3B6D11", background: "rgba(59,109,17,0.12)" }}>Learn</p>
-                  <p className="shipped-name" style={{ color: "#1a1a1a" }}>skim.</p>
-                  <p className="shipped-desc" style={{ color: "#6B6B5A", paddingRight: "88px" }}>
-                    Drop in anything you need to learn. It builds the lesson around you.
+                  <p className="shipped-label" style={{ color: "#C084FC", background: "rgba(168,85,247,0.2)" }}>Intelligence</p>
+                  <p className="shipped-name" style={{ color: "#E8E9F2" }}>Orvo Intelligence</p>
+                  <p className="shipped-desc" style={{ color: "#A0A3B8" }}>
+                    AI brand monitoring across Arabic and English MENA sources — signal detection, sentiment, and automated reporting.
                   </p>
                 </div>
-                <span className="shipped-status">Live</span>
+                <span className="shipped-status" style={{ background: "#2D2A5E", color: "#B5A6F0", border: "0.5px solid #5B3DC7" }}>Live</span>
               </div>
-              <span className="skim-fox-wrap" aria-hidden="true">
-                <SkimFox size={88} className="skim-fox" />
-              </span>
               <div className="shipped-bottom">
-                <div className="shipped-card-footer" style={{ justifyContent: "flex-start", gap: "8px" }}>
-                  <p className="shipped-url" style={{ color: "#6B6B5A" }}>skim.getorvo.co</p>
-                  <span className="shipped-arrow" style={{ color: "#6B6B5A" }}>↗</span>
-                </div>
-              </div>
-            </a>
-
-            {/* Jorvo — void dark */}
-            <a
-              href="https://jorvo.app"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="shipped-card"
-              style={{ background: "radial-gradient(circle at 84% 92%, rgba(255,255,255,0.16) 0%, transparent 55%), linear-gradient(135deg, #8B5CF6 0%, #6D28D9 55%, #5B21B6 100%)", borderColor: "rgba(255,255,255,0.18)" }}
-            >
-              <div className="shipped-top">
-                <div>
-                  <p className="shipped-label" style={{ color: "#EDE9FE", background: "rgba(255,255,255,0.16)" }}>Jobs</p>
-                  <p className="shipped-name" style={{ color: "#ffffff", fontSize: "26px" }}>Jorvo</p>
-                  <p className="shipped-desc" style={{ color: "#E4D9FF", fontSize: "13px", paddingRight: "96px" }}>
-                    Finds the roles, scores them against your CV, and preps you to win — before anyone else applies.
-                  </p>
-                </div>
-                <span className="shipped-status">Live</span>
-              </div>
-              <span className="jorvo-owl-wrap" aria-hidden="true">
-                <JorvoOwl size={96} className="jorvo-owl" />
-              </span>
-              <div className="shipped-bottom">
-                <div className="shipped-card-footer" style={{ justifyContent: "flex-start", gap: "8px" }}>
-                  <p className="shipped-url" style={{ color: "rgba(255,255,255,0.7)" }}>jorvo.app</p>
-                  <span className="shipped-arrow" style={{ color: "rgba(255,255,255,0.7)" }}>↗</span>
+                <div className="shipped-card-footer">
+                  <p className="shipped-url" style={{ color: "rgba(255,255,255,0.5)" }}>intelligence.getorvo.co</p>
+                  <span className="shipped-arrow" style={{ color: "rgba(255,255,255,0.5)" }}>↗</span>
                 </div>
               </div>
             </a>
